@@ -1,6 +1,6 @@
 ## ramDebian
 
-ramDebian is a lightweight, memory-based operating system, customized from Debian 12. This project aims to run Debian in memory, offering a faster and more streamlined experience. It’s ideal for users who need a minimalistic, high-performance system.
+ramDebian is a lightweight, memory-based operating system, customized from Debian 12. This project aims to run Debian in memory, offering a faster and more streamlined experience. It’s ideal for users who need a minimalistic, high-performance system. For more information, please see: [ramDebian](https://sitao.org/Linux/ramDebian.html)
 
 ## Features
 - Based on Debian 12: Built on the stable and secure foundation of Debian GNU/Linux 12.
@@ -14,3 +14,5 @@ ramDebian is a lightweight, memory-based operating system, customized from Debia
 
 ## License
 ramDebian is based on Debian, which is distributed under various open-source licenses, primarily the GNU General Public License (GPL). Please ensure compliance with the original licenses when using or distributing this system.
+
+
