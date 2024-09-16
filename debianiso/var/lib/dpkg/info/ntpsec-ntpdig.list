@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/bin
+/usr/bin/ntpdig
+/usr/share
+/usr/share/doc
+/usr/share/doc/ntpsec-ntpdig
+/usr/share/doc/ntpsec-ntpdig/NEWS.Debian.gz
+/usr/share/doc/ntpsec-ntpdig/changelog.Debian.gz
+/usr/share/doc/ntpsec-ntpdig/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/ntpdig.1.gz

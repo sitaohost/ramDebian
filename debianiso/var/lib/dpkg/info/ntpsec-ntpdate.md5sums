@@ -1,0 +1,8 @@
+9c726eafdcf9308d20d25b03668e0524  usr/sbin/ntpdate
+54ade5e5ffde68431d86968d7fe22f3a  usr/sbin/ntpdate-debian
+d9d75b922af13e901540b479c94b886b  usr/share/doc/ntpsec-ntpdate/NEWS.Debian.gz
+415907ceb652a476b6f70e58703d61eb  usr/share/doc/ntpsec-ntpdate/README.Debian
+c58b6cf62828b2876f555b5289882392  usr/share/doc/ntpsec-ntpdate/changelog.Debian.gz
+69cf52e21fd65d2edbed0be83d074b3a  usr/share/doc/ntpsec-ntpdate/copyright
+c99ed4477d77c0a60ead18ea4b060f0e  usr/share/man/man8/ntpdate-debian.8.gz
+04b05b63859a675b21e925c80124ff3a  usr/share/man/man8/ntpdate.8.gz

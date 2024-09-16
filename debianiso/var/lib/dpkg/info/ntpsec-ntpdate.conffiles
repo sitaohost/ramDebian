@@ -1,0 +1,4 @@
+/etc/NetworkManager/dispatcher.d/ntpsec-ntpdate
+/etc/default/ntpsec-ntpdate
+/etc/dhcp/dhclient-exit-hooks.d/ntpsec-ntpdate
+/etc/network/if-up.d/ntpsec-ntpdate

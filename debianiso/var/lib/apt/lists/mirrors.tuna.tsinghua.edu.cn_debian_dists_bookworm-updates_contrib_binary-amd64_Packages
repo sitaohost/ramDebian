@@ -1,0 +1,22 @@
+Package: nvidia-settings
+Version: 525.147.05-1~deb12u1
+Installed-Size: 1711
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Architecture: amd64
+Provides: nvidia-settings-gtk-525.147.05
+Depends: nvidia-alternative, libc6 (>= 2.34), libcairo2 (>= 1.2.4), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.16.0), libgtk-3-0 (>= 3.0.0), libjansson4 (>= 2.14), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libx11-6 (>= 2:1.4.99.1), libxext6, libxxf86vm1
+Pre-Depends: nvidia-installer-cleanup
+Recommends: libgl1-nvidia-glvnd-glx, nvidia-vdpau-driver, libnvidia-ml1
+Conflicts: nvidia-settings-gtk-525.147.05
+Description: tool for configuring the NVIDIA graphics driver
+Homepage: https://download.nvidia.com/XFree86/nvidia-settings/
+Description-md5: 3ffa050620c90555dbf58d2a6bebfd10
+Tag: admin::configuring, hardware::video, implemented-in::c,
+ interface::graphical, interface::x11, role::program, scope::utility,
+ uitoolkit::gtk, use::configuring, x11::application
+Section: contrib/x11
+Priority: optional
+Filename: pool/contrib/n/nvidia-settings/nvidia-settings_525.147.05-1~deb12u1_amd64.deb
+Size: 786328
+SHA256: c066b6fa981daa3c453477d05360c9e224cb7d7b27b28c9431f06f58dcb7e856
+

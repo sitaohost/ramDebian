@@ -1,0 +1,76 @@
+#!/bin/bash
+
+# Near-misses fail with SIGILL or SIGSEGV, we don't want core dumps.
+ulimit -c 0
+
+HELPERS=/usr/lib/arch-test/
+
+case "$1" in
+  --version)
+    printf 'arch-test %s\n' "v0.20"
+    exit 0
+    ;;
+  -n|--native)
+    export QEMU_VERSION=meow WINEPREFIX=/dev/null
+    shift
+    ;;
+  -c|--chroot)
+    shift
+    CHROOT="$1"
+    shift
+    if [ -z "$CHROOT" ]
+      then
+        echo >&2 "$0: -c requires path to the chroot (possibly '.')."; exit 2
+    fi
+    if [ ! -d "$CHROOT" ]
+      then
+        echo >&2 "$0: chroot '$CHROOT' is not a directory."; exit 2
+    fi
+    if [ "x$(id -u)" != "x0" ]
+      then
+        echo >&2 "$0: chrooting requires root."; exit 2
+    fi
+    if [ -z "$1" ]
+      then
+        echo >&2 "$0: -c works only with a single-arch query."; exit 2
+    fi
+    ;;
+  -*)
+    echo >&2 "$0: unknown option '$1'."; exit 2
+    ;;
+esac
+
+if [ $# -gt 1 ]
+  then echo >&2 'Usage: "arch-test [-n]" or "arch-test [-n|-c <chroot>] <arch>".'; exit 1
+fi
+
+if [ $# -eq 1 ]
+  then
+    if [ ! -x "$HELPERS$1" ]
+      then echo "I don't know how to detect arch '$1', sorry."; exit 2
+    fi
+
+    if [ -n "$CHROOT" ]
+      then
+        HELPER_F="$(basename $HELPERS$1)"
+        cp -p "$HELPERS$1" "$CHROOT/$HELPER_F"
+        trap "rm '$CHROOT/$HELPER_F'" 0
+        MSG=`chroot "$CHROOT" /"$HELPER_F" 2>/dev/null`
+      else
+        MSG=`$HELPERS$1 2>/dev/null`
+    fi
+    if [ $? -eq 0 -a "x$MSG" = "xok" ]
+      then echo "$1: ok"; exit 0
+      else echo "$1: not supported on this machine/kernel"; exit 1
+    fi
+fi
+
+for x in $HELPERS*
+  do
+    ARCH="$(basename "$x")"
+    ARCH="${ARCH##arch-test-}"
+    MSG=`"$x" 2>/dev/null|tr -d '\r'`
+    if [ $? -eq 0 -a "x$MSG" = "xok" ]
+      then echo "$ARCH"
+    fi
+  done

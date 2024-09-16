@@ -1,0 +1,15 @@
+253fef00dd0095dc27a9ccba2d78e6c7  usr/lib/python3/dist-packages/ntp-1.2.2.egg-info
+24e2d09541fd86bb1ed60fde5cee3cbf  usr/lib/python3/dist-packages/ntp/__init__.py
+0516cdf33df5cbe0d6b816f9044ffa1e  usr/lib/python3/dist-packages/ntp/agentx.py
+2871a25b36659a1eebd0ba3fa1dd9706  usr/lib/python3/dist-packages/ntp/agentx_packet.py
+cb4c5dfbfa85790f0e11eacace1cf3cc  usr/lib/python3/dist-packages/ntp/control.py
+7976da857d1b8301bdf8a8efd82e6884  usr/lib/python3/dist-packages/ntp/magic.py
+a07cb26d2a9d18a8dfcfe9e1d9555440  usr/lib/python3/dist-packages/ntp/ntpc.py
+ce33d78d66eaa5719a454f071dfc5831  usr/lib/python3/dist-packages/ntp/packet.py
+68e75e6bd9ab7c8fc3f341dee62b793d  usr/lib/python3/dist-packages/ntp/poly.py
+b95df191775a111ef3a5cd67b5be1684  usr/lib/python3/dist-packages/ntp/statfiles.py
+5265b1e9d171973a9b7ddd12a7710bdf  usr/lib/python3/dist-packages/ntp/util.py
+803bfadb59f5dd5a71323c6bf8529f6e  usr/lib/x86_64-linux-gnu/ntp/libntpc.so.1.1.0
+d9d75b922af13e901540b479c94b886b  usr/share/doc/python3-ntp/NEWS.Debian.gz
+d513e9da4903940d9cb90e72ff55f7ab  usr/share/doc/python3-ntp/changelog.Debian.gz
+69cf52e21fd65d2edbed0be83d074b3a  usr/share/doc/python3-ntp/copyright

@@ -1,0 +1,421 @@
+Package: diaspora-installer
+Description-md5: 120c7fb469648e6eb3e942926e8b1ea0
+Description-en: distributed social networking service - installer
+ Diaspora (currently styled diaspora* and formerly styled DIASPORA*) is a free
+ personal web server that implements a distributed social networking service.
+ Installations of the software form nodes (termed "pods") which make up the
+ distributed Diaspora social network.
+ .
+ Diaspora is intended to address privacy concerns related to centralized
+ social networks by allowing users to set up their own server (or "pod") to
+ host content; pods can then interact to share status updates, photographs,
+ and other social data. It allows its users to host their data with a
+ traditional web host, a cloud-based host, an ISP, or a friend. The framework,
+ which is being built on Ruby on Rails, is free software and can be
+ experimented with by external developers.
+ .
+ Learn more about Diaspora at http://diasporafoundation.org
+ .
+ This dummy package downloads diaspora (also pulling in runtime
+ dependencies as rubygems) and configures it to use PostgreSQL and
+ Nginx.
+ .
+ Unlike the normal Debian package, this package installs exact versions of the
+ dependencies supported by upstream.
+
+Package: diaspora-installer-mysql
+Description-md5: c18a155ca94ebb0900ab3ea2aa77e4b9
+Description-en: distributed social networking service - installer (with MySQL)
+ Diaspora (currently styled diaspora* and formerly styled DIASPORA*) is a free
+ personal web server that implements a distributed social networking service.
+ Installations of the software form nodes (termed "pods") which make up the
+ distributed Diaspora social network.
+ .
+ Diaspora is intended to address privacy concerns related to centralized
+ social networks by allowing users to set up their own server (or "pod") to
+ host content; pods can then interact to share status updates, photographs,
+ and other social data. It allows its users to host their data with a
+ traditional web host, a cloud-based host, an ISP, or a friend. The framework,
+ which is being built on Ruby on Rails, is free software and can be
+ experimented with by external developers.
+ .
+ Learn more about Diaspora at http://diasporafoundation.org
+ .
+ This dummy package downloads diaspora (also pulling in runtime
+ dependencies as rubygems) and configures it to use MySQL and  Nginx.
+ .
+ Unlike the normal Debian package, this package installs exact versions of the
+ dependencies supported by upstream.
+
+Package: libhwloc-contrib-plugins
+Description-md5: 2b02fbf995ab5fe6645ca4e4ad3e8d3f
+Description-en: Hierarchical view of the machine - contrib plugins
+ libhwloc provides a portable abstraction (across OS, versions,
+ architectures, ...) of the hierarchical topology of modern architectures. It
+ primarily aims at helping high-performance computing applications with
+ gathering information about the hardware so as to exploit it accordingly and
+ efficiently.
+ .
+ libhwloc provides a hierarchical view of the machine, NUMA memory nodes,
+ sockets, shared caches, cores and simultaneous multithreading. It also gathers
+ various attributes such as cache and memory information.
+ .
+ libhwloc supports old kernels not having sysfs topology information,
+ with knowledge of cpusets, offline cpus, and Kerrighed support
+ .
+ This package contains plugins to add discovery support for non-free items. This
+ includes
+  - CUDA support.
+
+Package: josm-installer
+Description-md5: 6a03f3c780cd85e845b96acc9c4c992b
+Description-en: Editor for OpenStreetMap (installer)
+ JOSM is an editor for OpenStreetMap (OSM) written in Java.
+ The current version supports stand alone GPX tracks, GPX track data
+ from OSM database and existing nodes, line segments and metadata tags
+ from the OSM database.
+ .
+ OpenStreetMap is a project aimed squarely at creating and providing
+ free geographic data such as street maps to anyone who wants them.
+ The project was started because most maps you think of as free actually
+ have legal or technical restrictions on their use, holding back people
+ from using them in creative, productive or unexpected ways.
+ .
+ This package provides a script to install the upstream JARs.
+
+Package: openrct2
+Description-md5: 136f2157dc662607863d657b37a31ab7
+Description-en: Open-source re-implementation of RollerCoaster Tycoon 2
+ OpenRCT2 is an open-source re-implementation of RollerCoaster Tycoon 2
+ (RCT2). The gameplay revolves around building and maintaining an
+ amusement park containing attractions, shops and facilities. The player
+ must try to make a profit and maintain a good park reputation whilst
+ keeping the guests happy. OpenRCT2 allows for both scenario and sandbox
+ play. Scenarios require the player to complete a certain objective in a
+ set time limit whilst sandbox allows the player to build a more flexible
+ park with optionally no restrictions or finance.
+ .
+ RollerCoaster Tycoon 2 was originally written by Chris Sawyer in x86
+ assembly and is the sequel to RollerCoaster Tycoon. The engine was based
+ on Transport Tycoon, an older game which also has an equivalent
+ open-source project, OpenTTD. OpenRCT2 attempts to provide everything
+ from RCT2 as well as many improvements and additional features, some of
+ these include support for modern platforms, an improved interface,
+ improved guest and staff AI, more editing tools, increased limits, and
+ cooperative multiplayer. It also re-introduces mechanics from RollerCoaster
+ Tycoon that were not present in RollerCoaster Tycoon 2. Some of those
+ include; mountain tool in-game, the "have fun" objective, launched coasters
+ (not passing-through the station) and several buttons on the toolbar.
+
+Package: openrct2-data
+Description-md5: ba13feafd937c7243870a1c8ec2b7d37
+Description-en: Required game data for OpenRCT2
+ This package provides the architecture-independent game assets required by
+ the openrct2 executables.
+
+Package: openrct2-objects
+Description-md5: f6bc7e007707cf7a1dba4734f5d1ca70
+Description-en: Object definitions for OpenRCT2
+ This package contains object definitions and translations for
+ RollerCoaster Tycoon and RollerCoaster Tycoon 2 (requires the
+ original game files; not included with this package).
+
+Package: openrct2-openmsx
+Description-md5: 29cffff1edb40b4341c0e58b2bbe1286
+Description-en: New versions of the songs from RollerCoaster Tycoon 2
+ This project aims to create an alternative, high quality soundtrack
+ as replacement for, and addition to RollerCoaster Tycoon 2's
+ soundtrack for use in OpenRCT2.
+
+Package: openrct2-opensfx
+Description-md5: 6b3b132eb8b7ef168c450910d0f11ffa
+Description-en: Project to create a replacement for RCT2's sound effects file
+ A free collection of alternative sound effects from RollerCoaster
+ Tycoon 2 for use in OpenRCT2.
+
+Package: openrct2-title-sequences
+Description-md5: 2950e021be87789c2f6f89fcc1915f8c
+Description-en: Title sequences for OpenRCT2
+ This package contains the custom title sequence for OpenRCT2, along
+ with metadata to select the original title sequences that shipped
+ with RollerCoaster Tycoon and RollerCoaster Tycoon 2 (requires the
+ original game files; not included with this package).
+
+Package: sabnzbdplus
+Description-md5: 9af99c00c3efdc0801f9fda555ddbd78
+Description-en: web-based binary newsreader with nzb support
+ SABnzbd+ is a web-based binary newsgrabber written in Python, with support for
+ the popular nzb file format. It greatly simplifies the process of downloading
+ from Usenet, thanks to a friendly web-based, fully customizable user interface
+ and advanced built-in post-processing options including the ability to
+ automatically verify, repair, extract and clean up downloaded posts.
+ .
+ Multiple servers are supported, as well as secure (ssl) connections, ipv6,
+ scheduling, pausing and resuming downloads, queue manipulation, rss feeds,
+ automatic sorting, a download history, email notifications, and custom
+ post-processing scripts. An extensive API allows third party applications to
+ interact with the program.
+ .
+ This package contains the program itself and all interface templates.
+
+Package: speech-dispatcher-baratinoo
+Description-md5: 084e6e01506ac290c402b752a5ca7014
+Description-en: Speech Dispatcher: Baratinoo (VoxyGen) output module
+ Speech Dispatcher provides a device independent layer for speech synthesis.
+ It supports various software and hardware speech synthesizers as
+ backends and provides a generic layer for synthesizing speech and
+ playing back PCM data via those different backends to applications.
+ .
+ Various high level concepts like enqueueing vs. interrupting speech and
+ application specific user configurations are implemented in a device
+ independent way, therefore freeing the application programmer from
+ having to yet again reinvent the wheel.
+ .
+ This package contains the output module for the Baratinoo speech synthesizer,
+ also called VoxyGen, which needs to be installed separately.
+
+Package: speech-dispatcher-ibmtts
+Description-md5: 58e52cccb215af6ea193914e90fd5155
+Description-en: Speech Dispatcher: IBM TTS output module
+ Speech Dispatcher provides a device independent layer for speech synthesis.
+ It supports various software and hardware speech synthesizers as
+ backends and provides a generic layer for synthesizing speech and
+ playing back PCM data via those different backends to applications.
+ .
+ Various high level concepts like enqueueing vs. interrupting speech and
+ application specific user configurations are implemented in a device
+ independent way, therefore freeing the application programmer from
+ having to yet again reinvent the wheel.
+ .
+ This package contains the output module for the IBM TTS (aka Eloquence),
+ which needs to be installed separately.
+
+Package: speech-dispatcher-ivona
+Description-md5: 86870f9edb7fda6696c749808c9ab8ad
+Description-en: Speech Dispatcher: Ivona output module
+ Speech Dispatcher provides a device independent layer for speech synthesis.
+ It supports various software and hardware speech synthesizers as
+ backends and provides a generic layer for synthesizing speech and
+ playing back PCM data via those different backends to applications.
+ .
+ Various high level concepts like enqueueing vs. interrupting speech and
+ application specific user configurations are implemented in a device
+ independent way, therefore freeing the application programmer from
+ having to yet again reinvent the wheel.
+ .
+ This package contains the output module for the Ivona speech synthesizer,
+ which needs to be installed separately.
+
+Package: speech-dispatcher-kali
+Description-md5: ed862f91a9dfc6b45f556e27600025f3
+Description-en: Speech Dispatcher: Kali output module
+ Speech Dispatcher provides a device independent layer for speech synthesis.
+ It supports various software and hardware speech synthesizers as
+ backends and provides a generic layer for synthesizing speech and
+ playing back PCM data via those different backends to applications.
+ .
+ Various high level concepts like enqueueing vs. interrupting speech and
+ application specific user configurations are implemented in a device
+ independent way, therefore freeing the application programmer from
+ having to yet again reinvent the wheel.
+ .
+ This package contains the output module for the Kali speech synthesizer,
+ which needs to be installed separately.
+
+Package: speech-dispatcher-pico
+Description-md5: 3f7b0336934407e292229150a3407010
+Description-en: Speech Dispatcher: Pico output module
+ Speech Dispatcher provides a device independent layer for speech synthesis.
+ It supports various software and hardware speech synthesizers as
+ backends and provides a generic layer for synthesizing speech and
+ playing back PCM data via those different backends to applications.
+ .
+ Various high level concepts like enqueueing vs. interrupting speech and
+ application specific user configurations are implemented in a device
+ independent way, therefore freeing the application programmer from
+ having to yet again reinvent the wheel.
+ .
+ This package contains the output module for the pico speech synthesizer.
+
+Package: speech-dispatcher-voxin
+Description-md5: 83b1d95c5cad4931b0402c5c5475c962
+Description-en: Speech Dispatcher: Voxin output module
+ Speech Dispatcher provides a device independent layer for speech synthesis.
+ It supports various software and hardware speech synthesizers as
+ backends and provides a generic layer for synthesizing speech and
+ playing back PCM data via those different backends to applications.
+ .
+ Various high level concepts like enqueueing vs. interrupting speech and
+ application specific user configurations are implemented in a device
+ independent way, therefore freeing the application programmer from
+ having to yet again reinvent the wheel.
+ .
+ This package contains the output module for the Voxin speech synthesizer,
+ which supports IBM TTS (aka Eloquence) and Vocalizer Embedded, which needs to
+ be installed separately.
+
+Package: libnvpair3linux
+Description-md5: dff01db1623b4ac78db22bcc089d9e49
+Description-en: Solaris name-value library for Linux
+ This library provides routines for packing and unpacking nv pairs for
+ transporting data across process boundaries, transporting between
+ kernel and userland, and possibly saving onto disk files.
+
+Package: libpam-zfs
+Description-md5: 22667c0f995168539097f168459e100b
+Description-en: PAM module for managing encryption keys for ZFS
+ OpenZFS is a storage platform that encompasses the functionality of
+ traditional filesystems and volume managers. It supports data checksums,
+ compression, encryption, snapshots, and more.
+ .
+ This provides a Pluggable Authentication Module (PAM) that automatically
+ unlocks encrypted ZFS datasets upon login.
+
+Package: libuutil3linux
+Description-md5: 9bf9c128615174d04a0bb25b39d60322
+Description-en: Solaris userland utility library for Linux
+ This library provides a variety of glue functions for ZFS on Linux:
+  * libspl: The Solaris Porting Layer userland library, which provides APIs
+    that make it possible to run Solaris user code in a Linux environment
+    with relatively minimal modification.
+  * libavl: The Adelson-Velskii Landis balanced binary tree manipulation
+    library.
+  * libefi: The Extensible Firmware Interface library for GUID disk
+    partitioning.
+  * libshare: NFS, SMB, and iSCSI service integration for ZFS.
+
+Package: libzfs4linux
+Description-md5: 68404c691e40434a1c18cb823bdc6f84
+Description-en: OpenZFS filesystem library for Linux - general support
+ OpenZFS is a storage platform that encompasses the functionality of
+ traditional filesystems and volume managers. It supports data checksums,
+ compression, encryption, snapshots, and more.
+ .
+ The OpenZFS library provides support for managing OpenZFS filesystems.
+
+Package: libzfsbootenv1linux
+Description-md5: ba1246d18e334f582c2be912dfe69655
+Description-en: OpenZFS filesystem library for Linux - label info support
+ OpenZFS is a storage platform that encompasses the functionality of
+ traditional filesystems and volume managers. It supports data checksums,
+ compression, encryption, snapshots, and more.
+ .
+ The zfsbootenv library provides support for modifying ZFS label information.
+
+Package: libzfslinux-dev
+Description-md5: f1a2250776c6f7f70d2a90196a6ab150
+Description-en: OpenZFS filesystem development files for Linux
+ Header files and static libraries for compiling software against
+ libraries of OpenZFS filesystem.
+ .
+ This package includes the development files of libnvpair3, libuutil3,
+ libzpool5 and libzfs4.
+
+Package: libzpool5linux
+Description-md5: 5411b703c1dae8e2c3f38bbe7330f01d
+Description-en: OpenZFS pool library for Linux
+ OpenZFS is a storage platform that encompasses the functionality of
+ traditional filesystems and volume managers. It supports data checksums,
+ compression, encryption, snapshots, and more.
+ .
+ This zpool library provides support for managing zpools.
+
+Package: python3-pyzfs
+Description-md5: cc3c162e8790777a7a60f39c29c8ee89
+Description-en: wrapper for libzfs_core C library
+ libzfs_core is intended to be a stable interface for programmatic
+ administration of ZFS. This wrapper provides one-to-one wrappers for
+ libzfs_core API functions, but the signatures and types are more natural to
+ Python.
+ .
+ nvlists are wrapped as dictionaries or lists depending on their usage.
+ Some parameters have default values depending on typical use for
+ increased convenience. Enumerations and bit flags become strings and lists
+ of strings in Python. Errors are reported as exceptions rather than integer
+ errno-style error codes.  The wrapper takes care to provide one-to-many
+ mapping of the error codes to the exceptions by interpreting a context
+ in which the error code is produced.
+
+Package: pyzfs-doc
+Description-md5: 18d5a3ceb2ed973459a34b4af3cc06cc
+Description-en: wrapper for libzfs_core C library (documentation)
+ libzfs_core is intended to be a stable interface for programmatic
+ administration of ZFS. This wrapper provides one-to-one wrappers for
+ libzfs_core API functions, but the signatures and types are more natural to
+ Python.
+ .
+ nvlists are wrapped as dictionaries or lists depending on their usage.
+ Some parameters have default values depending on typical use for
+ increased convenience. Enumerations and bit flags become strings and lists
+ of strings in Python. Errors are reported as exceptions rather than integer
+ errno-style error codes.  The wrapper takes care to provide one-to-many
+ mapping of the error codes to the exceptions by interpreting a context
+ in which the error code is produced.
+ .
+ This package contains the documentation.
+
+Package: zfs-dkms
+Description-md5: 39e75ed3c1d3a5bc9c23ff32d0b5bbe1
+Description-en: OpenZFS filesystem kernel modules for Linux
+ OpenZFS is a storage platform that encompasses the functionality of
+ traditional filesystems and volume managers. It supports data checksums,
+ compression, encryption, snapshots, and more.
+ .
+ This DKMS package includes the SPA, DMU, ZVOL, and ZPL components of
+ OpenZFS.
+
+Package: zfs-dracut
+Description-md5: 965d2232071aa7eaad3e0a3ca11764b0
+Description-en: OpenZFS root filesystem capabilities for Linux - dracut
+ OpenZFS is a storage platform that encompasses the functionality of
+ traditional filesystems and volume managers. It supports data checksums,
+ compression, encryption, snapshots, and more.
+ .
+ This package adds OpenZFS to the system initramfs with a hook
+ for the dracut infrastructure.
+
+Package: zfs-initramfs
+Description-md5: ed136876804c562cd1f81b87863a33a9
+Description-en: OpenZFS root filesystem capabilities for Linux - initramfs
+ OpenZFS is a storage platform that encompasses the functionality of
+ traditional filesystems and volume managers. It supports data checksums,
+ compression, encryption, snapshots, and more.
+ .
+ This package adds OpenZFS to the system initramfs with a hook
+ for the initramfs-tools infrastructure.
+
+Package: zfs-test
+Description-md5: 626efba8698ac960b7fa793abb13e6d2
+Description-en: OpenZFS test infrastructure and support scripts
+ OpenZFS is a storage platform that encompasses the functionality of
+ traditional filesystems and volume managers. It supports data checksums,
+ compression, encryption, snapshots, and more.
+ .
+ This package provides the OpenZFS test infrastructure for destructively
+ testing and validating a system using OpenZFS. It is entirely optional
+ and should only be installed and used in test environments.
+
+Package: zfs-zed
+Description-md5: 371f25433afc0f13d827a77c432615a1
+Description-en: OpenZFS Event Daemon
+ OpenZFS is a storage platform that encompasses the functionality of
+ traditional filesystems and volume managers. It supports data checksums,
+ compression, encryption, snapshots, and more.
+ .
+ ZED (ZFS Event Daemon) monitors events generated by the ZFS kernel
+ module. When a zevent (ZFS Event) is posted, ZED will run any ZEDLETs
+ (ZFS Event Daemon Linkage for Executable Tasks) that have been enabled
+ for the corresponding zevent class.
+ .
+ This package provides the OpenZFS Event Daemon (zed).
+
+Package: zfsutils-linux
+Description-md5: e0d1624ff402201471b9a32e9cb71f16
+Description-en: command-line tools to manage OpenZFS filesystems
+ OpenZFS is a storage platform that encompasses the functionality of
+ traditional filesystems and volume managers. It supports data checksums,
+ compression, encryption, snapshots, and more.
+ .
+ This package provides the zfs and zpool commands to create and administer
+ OpenZFS filesystems.
+

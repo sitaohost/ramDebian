@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# 提供选项并提示用户输入
+echo "请选择Debian的APT源："
+echo "[1] 官方源 (默认)"
+echo "[2] 清华源"
+read -p "请输入您的选择 [1/2]: " choice
+
+# 设置默认选择为1（官方源）
+choice=${choice:-1}
+
+if [ "$choice" -eq 1 ]; then
+  echo "使用官方源配置APT源列表..."
+  cat << EOF > /etc/apt/sources.list
+deb http://deb.debian.org/debian/ bookworm main contrib non-free-firmware
+deb http://deb.debian.org/debian/ bookworm-updates main contrib non-free-firmware
+deb http://deb.debian.org/debian/ bookworm-backports main contrib non-free-firmware
+deb http://deb.debian.org/debian-security/ bookworm-security main contrib non-free-firmware
+EOF
+  echo "APT源已设置为官方源。"
+
+elif [ "$choice" -eq 2 ]; then
+  echo "使用清华源配置APT源列表..."
+  cat << EOF > /etc/apt/sources.list
+deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free-firmware
+deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm-updates main contrib non-free-firmware
+deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm-backports main contrib non-free-firmware
+deb http://mirrors.tuna.tsinghua.edu.cn/debian-security bookworm-security main contrib non-free-firmware
+EOF
+  echo "APT源已设置为清华源。"
+
+else
+  echo "无效的输入，请选择 1 或 2。"
+  exit 1
+fi
+
+# 更新APT缓存
+echo "正在更新APT缓存..."
+apt update

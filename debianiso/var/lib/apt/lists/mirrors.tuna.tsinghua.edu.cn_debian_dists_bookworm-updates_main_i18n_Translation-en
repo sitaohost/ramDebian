@@ -1,0 +1,169 @@
+Package: ikiwiki-hosting-common
+Description-md5: a9dbb4ce8cf09b5888a36e71afaa2735
+Description-en: ikiwiki hosting: common files
+ A hosting interface for ikiwiki. Facilitates management of many separate
+ ikiwiki sites, with capabilities including web-based signup to create new
+ sites, easy support for branching sites, deleting sites, and transferring
+ sites between servers. Ikiwiki-hosting was developed for Branchable.com.
+ .
+ This package contains common files for all ikiwiki hosting servers,
+ and documentation.
+
+Package: ikiwiki-hosting-dns
+Description-md5: 4c1ee9d4ce9b8d5a774afbcf88a097bd
+Description-en: ikiwiki hosting: dns server
+ A hosting interface for ikiwiki. Facilitates management of many separate
+ ikiwiki sites, with capabilities including web-based signup to create new
+ sites, easy support for branching sites, deleting sites, and transferring
+ sites between servers. Ikiwiki-hosting was developed for Branchable.com.
+ .
+ This package should be installed on the master DNS server, only if you
+ will be allowing ikiwiki-hosting to automatically manage DNS for
+ sites. It contains the ikidns program.
+
+Package: ikiwiki-hosting-web
+Description-md5: 241a687ddb963bcb7f26722ed3701479
+Description-en: ikiwiki hosting: web server
+ A hosting interface for ikiwiki. Facilitates management of many separate
+ ikiwiki sites, with capabilities including web-based signup to create new
+ sites, easy support for branching sites, deleting sites, and transferring
+ sites between servers. Ikiwiki-hosting was developed for Branchable.com.
+ .
+ This package contains the ikisite program, and related things to install
+ on each web server.
+
+Package: xscreensaver
+Description-md5: f28418049591dc7ea8833c590fe2406a
+Description-en: Screensaver daemon and frontend for X11
+ XScreenSaver is a modular screen saver and locker for X11,
+ containing more than 200 screen savers.
+ .
+ This package includes the bare minimum needed to blank and lock your
+ screen. Install this package if you want to use the xscreensaver engine
+ to control screen blanking and launching display modes ("hacks"). If
+ you only want to use other screensaver engines, you don't need to
+ install this package.
+ .
+ The graphical display modes are in the xscreensaver-data,
+ xscreensaver-data-extra, xscreensaver-gl and xscreensaver-gl-extra
+ packages.
+
+Package: xscreensaver-data
+Description-md5: 536b56342032dfd837382af49582b3ca
+Description-en: Screen saver modules for screensaver frontends
+ XScreenSaver is a modular screen saver and locker for X11,
+ containing more than 200 screen savers.
+ .
+ This package contains a small selection of graphical screen saver
+ modules (listed below) from the xscreensaver collection. This package
+ can be used by xscreensaver and also some other screensaver engines.
+ .
+ This is the selected set of non-GL screensavers shipped by default:
+ abstractile, binaryhorizon, binaryring, cwaves, deco, distort,
+ fiberlamp, fuzzyflakes, galaxy, hexadrop, m6502, marbling, metaballs,
+ penrose, ripples, scooter, shadebobs, slidescreen, swirl,
+ tessellimage, xlyap.
+ .
+ More display modes can be found in xscreensaver-data-extra,
+ xscreensaver-gl and xscreensaver-gl-extra packages.
+
+Package: xscreensaver-data-extra
+Description-md5: e2e30af33c7cede942543fe590347d31
+Description-en: Extra screen saver modules for screensaver frontends
+ XScreenSaver is a modular screen saver and locker for X11,
+ containing more than 200 screen savers.
+ .
+ This package contains the rest of the 2D screen saver modules from
+ the xscreensaver collection. This package can be used by
+ xscreensaver and also some other screensaver engines.
+ .
+ This is the set of non-GL screensavers not shipped by default:
+ anemone, anemotaxis, apollonian, apple2, attraction, barcode,
+ blaster, blitspin, bouboule, boxfit, braid, bumps, ccurve, celtic,
+ cloudlife, compass, coral, crystal, cynosure, decayscreen, deluxe,
+ demon, discrete, drift, epicycle, eruption, euler2d, fadeplot,
+ filmleader, fireworkx, flame, flow, fluidballs, fontglide, glitchpeg,
+ goop, grav, greynetic, halftone, halo, helix, hopalong, ifs, imsmap,
+ interaggregate, interference, intermomentary, julia, kaleidescope,
+ kumppa, lcdscrub, loop, maze, memscroller, moire2, moire,
+ mountain, munch, nerverot, noseguy, pacman, pedal, penetrate, petri,
+ phosphor, piecewise, polyominoes, pong, pyro, qix, rd-bomb, rocks,
+ rorschach, rotzoomer, sierpinski, slip, speedmine, spotlight,
+ squiral, starfish, strange, substrate, triangle, truchet, twang,
+ vermiculate, vfeedback, vidwhacker, wander, whirlwindwarp, wormhole,
+ xanalogtv, xflame, xjack, xmatrix, xrayswarm, xspirograph, zoom.
+ .
+ More display modes can be found in the xscreensaver-data,
+ xscreensaver-gl and xscreensaver-gl-extra packages.
+
+Package: xscreensaver-gl
+Description-md5: 66869878b1853aa8bc96303f75f6fddb
+Description-en: GL(Mesa) screen saver modules for screensaver frontends
+ XScreenSaver is a modular screen saver and locker for X11,
+ containing more than 200 screen savers.
+ .
+ This package contains a small selection of 3D (OpenGL) screen saver
+ modules from the xscreensaver collection. This package can be used by
+ xscreensaver and also some other screensaver engines.
+ .
+ This is the set of GL screensavers shipped by default:
+ antinspect, antspotlight, atunnel, beats, blinkbox, bubble3d,
+ chompytower, circuit, cityflow, covid19, crumbler, cubestack,
+ cubestorm, cubetwist, discoball, dymaxionmap, endgame, energystream,
+ engine, esper, etruscanvenus, flipflop, flipscreen3d, flyingtoasters,
+ gears, geodesic, geodesicgears, gflux, gibson, glblur, glcells,
+ gleidescope, glknots, glmatrix, glschool, glslideshow, glsnake,
+ gltext, headroom, hexstrut, hextrail, hydrostat, hypertorus,
+ jigglypuff, kaleidocycle, lavalite, lockward, mapscroller, maze3d,
+ mirrorblob, moebius, moebiusgears, molecule, morph3d, nakagin,
+ peepers, pipes, polyhedra, polytopes, projectiveplane, pulsar,
+ quasicrystal, queens, raverhoop, razzledazzle, romanboy,
+ sierpinski3d, sonar, sphereeversion, spheremonics, splitflap,
+ splodesic, squirtorus, stonerview, superquadrics, topblock, unicrud,
+ vigilance, voronoi, winduprobot.
+ .
+ More display modes can be found in the xscreensaver-data,
+ xscreensaver-data-extra and xscreensaver-gl-extra packages.
+
+Package: xscreensaver-gl-extra
+Description-md5: 21a355da6381e7acb7c8bbf7405efa4d
+Description-en: Extra GL(Mesa) screen saver modules for screensaver frontends
+ XScreenSaver is a modular screen saver and locker for X11,
+ containing more than 200 screen savers.
+ .
+ This package contains the rest of the 3D (OpenGL) screen saver
+ modules from the xscreensaver collection. This package can be used by
+ xscreensaver and also some other screensaver engines.
+ .
+ This is the set of GL screensavers not shipped by default with
+ xscreensaver-gl:
+ antmaze, atlantis, blocktube, boing, bouncingcow, boxed, cage,
+ carousel, companioncube, crackberg, cube21, cubenetic, cubicgrid,
+ dangerball, deepstars, extrusion, fliptext, flurry, gravitywell, glhanoi,
+ glplanet, handsy, hilbert, hypnowheel, jigsaw, juggler3d, klein, lament,
+ menger, noof, photopile, pinion, providence, rubik, rubikblocks, sballs,
+ skytentacles, sproingies, stairs, starwars, surfaces, tangram, timetunnel,
+ tronbit, unknownpleasures.
+ .
+ More display modes can be found in the xscreensaver-data,
+ xscreensaver-data-extra and xscreensaver-gl packages.
+
+Package: xscreensaver-screensaver-bsod
+Description-md5: 5121b9ed12328a3984b2b9690b68a805
+Description-en: BSOD screen saver module from XScreenSaver
+ This package ships the mode BSOD that shows the popular Blue Screens of Death
+ from several OSes including BSD, Windows, Linux, Solaris, Apple and much more.
+ .
+ WARNING: This screensaver could be confused with a real BSOD and could lead an
+ user to reboot the machine with consequences like data loss.
+
+Package: xscreensaver-screensaver-webcollage
+Description-md5: 98b8867f7f079391ec91896cc6ea46c5
+Description-en: Webcollage screen saver module from XScreenSaver
+ This package ships the mode webcollage which displays images from random
+ web searches on the Internet.
+ .
+ WARNING: The Internet being what it is, absolutely anything might show up
+ in the collage of search results including -- quite possibly -- pornography,
+ or even nudity. Please act accordingly.
+

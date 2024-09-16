@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Pacman
+GenericName=Arcade Game
+Comment=A simple clone of the classic arcade game
+Comment[de]=Ein simpler Klon des Arkadeklassikers Pacman
+Exec=pacman
+Icon=pacmania
+Type=Application
+Categories=Game;ArcadeGame;
+Keywords=arcade;pacman;dots;ghosts;level;
+

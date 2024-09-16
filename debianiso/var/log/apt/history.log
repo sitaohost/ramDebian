@@ -1,0 +1,36 @@
+
+Start-Date: 2024-09-14  13:26:34
+Commandline: apt install vim lsof curl wget ssh rsync htop zstd initramfs-tools bash-completion
+Install: libssh2-1:amd64 (1.10.0-3+b1, automatic), libwrap0:amd64 (7.6.q-32, automatic), libcurl4:amd64 (7.88.1-10+deb12u7, automatic), initramfs-tools-core:amd64 (0.142+deb12u1, automatic), zstd:amd64 (1.5.4+dfsg2-5), libnghttp2-14:amd64 (1.52.0-1+deb12u1, automatic), openssh-client:amd64 (1:9.2p1-2+deb12u3, automatic), libnl-3-200:amd64 (3.7.0-0.2+b1, automatic), libnl-genl-3-200:amd64 (3.7.0-0.2+b1, automatic), dbus-user-session:amd64 (1.14.10-1~deb12u1, automatic), libldap-common:amd64 (2.5.13+dfsg-5, automatic), libpam-systemd:amd64 (252.30-1~deb12u2, automatic), busybox:amd64 (1:1.35.0-4+b3, automatic), ssh:amd64 (1:9.2p1-2+deb12u3), ucf:amd64 (3.0043+nmu1, automatic), vim:amd64 (2:9.0.1378-2), libsasl2-modules:amd64 (2.1.28+dfsg-10, automatic), libsasl2-2:amd64 (2.1.28+dfsg-10, automatic), libexpat1:amd64 (2.5.0-1, automatic), libxmuu1:amd64 (2:1.1.3-3, automatic), libfido2-1:amd64 (1.12.0-2+b1, automatic), dbus-daemon:amd64 (1.14.10-1~deb12u1, automatic), librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b2, automatic), libgpm2:amd64 (1.20.7-10+b1, automatic), libxau6:amd64 (1:1.0.9-1, automatic), libxcb1:amd64 (1.15-1, automatic), openssh-server:amd64 (1:9.2p1-2+deb12u3, automatic), libdbus-1-3:amd64 (1.14.10-1~deb12u1, automatic), runit-helper:amd64 (2.15.2, automatic), dbus-bin:amd64 (1.14.10-1~deb12u1, automatic), libsasl2-modules-db:amd64 (2.1.28+dfsg-10, automatic), libldap-2.5-0:amd64 (2.5.13+dfsg-5, automatic), wget:amd64 (1.21.3-1+b2), publicsuffix:amd64 (20230209.2326-1, automatic), libx11-data:amd64 (2:1.8.4-2+deb12u2, automatic), lsof:amd64 (4.95.0-1), libsodium23:amd64 (1.0.18-1, automatic), klibc-utils:amd64 (2.0.12-1, automatic), xauth:amd64 (1:1.1.2-1, automatic), linux-base:amd64 (4.9, automatic), libklibc:amd64 (2.0.12-1, automatic), libnsl2:amd64 (1.3.0-2, automatic), rsync:amd64 (3.2.7-1), dbus-session-bus-common:amd64 (1.14.10-1~deb12u1, automatic), vim-runtime:amd64 (2:9.0.1378-2, automatic), ca-certificates:amd64 (20230311, automatic), bash-completion:amd64 (1:2.11-6), openssh-sftp-server:amd64 (1:9.2p1-2+deb12u3, automatic), libbrotli1:amd64 (1.0.9-2+b6, automatic), htop:amd64 (3.2.2-2), libxext6:amd64 (2:1.3.4-1+b1, automatic), initramfs-tools:amd64 (0.142+deb12u1), curl:amd64 (7.88.1-10+deb12u7), libcbor0.8:amd64 (0.8.0-2+b1, automatic), libx11-6:amd64 (2:1.8.4-2+deb12u2, automatic), dbus-system-bus-common:amd64 (1.14.10-1~deb12u1, automatic), ncurses-term:amd64 (6.4-4, automatic), dbus:amd64 (1.14.10-1~deb12u1, automatic), libpsl5:amd64 (0.21.2-1, automatic), libxdmcp6:amd64 (1:1.1.2-3, automatic), openssl:amd64 (3.0.14-1~deb12u2, automatic)
+Upgrade: libssl3:amd64 (3.0.14-1~deb12u1, 3.0.14-1~deb12u2)
+End-Date: 2024-09-14  13:26:41
+
+Start-Date: 2024-09-14  13:26:44
+Commandline: apt install debootstrap arch-install-scripts pacman archlinux-keyring
+Install: pacman:amd64 (10-19+b1), gpg:amd64 (2.2.40-1.1, automatic), arch-test:amd64 (0.20-1, automatic), gnupg:amd64 (2.2.40-1.1, automatic), gpg-wks-server:amd64 (2.2.40-1.1, automatic), gpg-agent:amd64 (2.2.40-1.1, automatic), libassuan0:amd64 (2.5.5-5, automatic), libnpth0:amd64 (1.6-3, automatic), arch-install-scripts:amd64 (28-1), debootstrap:amd64 (1.0.128+nmu2+deb12u1), libsqlite3-0:amd64 (3.40.1-2, automatic), pinentry-curses:amd64 (1.2.1-1, automatic), gpgsm:amd64 (2.2.40-1.1, automatic), dirmngr:amd64 (2.2.40-1.1, automatic), libksba8:amd64 (1.6.3-2, automatic), gnupg-utils:amd64 (2.2.40-1.1, automatic), gnupg-l10n:amd64 (2.2.40-1.1, automatic), gpg-wks-client:amd64 (2.2.40-1.1, automatic), archlinux-keyring:amd64 (0~20231113-1~deb12u1), gpgconf:amd64 (2.2.40-1.1, automatic)
+End-Date: 2024-09-14  13:26:46
+
+Start-Date: 2024-09-14  14:20:52
+Commandline: apt install ntpdate -y
+Install: ntpdate:amd64 (1:4.2.8p15+dfsg-2~1.2.2+dfsg1-1+deb12u1), python3.11:amd64 (3.11.2-6+deb12u3, automatic), ntpsec-ntpdate:amd64 (1.2.2+dfsg1-1+deb12u1, automatic), python3-minimal:amd64 (3.11.2-1+b1, automatic), python3:amd64 (3.11.2-1+b1, automatic), libpython3.11-minimal:amd64 (3.11.2-6+deb12u3, automatic), media-types:amd64 (10.0.0, automatic), libpython3.11-stdlib:amd64 (3.11.2-6+deb12u3, automatic), python3-ntp:amd64 (1.2.2+dfsg1-1+deb12u1, automatic), libpython3-stdlib:amd64 (3.11.2-1+b1, automatic), ntpsec-ntpdig:amd64 (1.2.2+dfsg1-1+deb12u1, automatic), python3.11-minimal:amd64 (3.11.2-6+deb12u3, automatic)
+End-Date: 2024-09-14  14:20:54
+
+Start-Date: 2024-09-14  15:11:21
+Commandline: apt remove --purge linux-image-6.6.51-sitao
+Purge: linux-image-6.6.51-sitao:amd64 (6.6.51-2)
+End-Date: 2024-09-14  15:11:21
+
+Start-Date: 2024-09-14  15:11:35
+Commandline: apt remove --purge linux-headers-6.6.51-sitao
+Purge: linux-headers-6.6.51-sitao:amd64 (6.6.51-2)
+End-Date: 2024-09-14  15:11:36
+
+Start-Date: 2024-09-14  15:39:40
+Commandline: apt remove --purge linux-image-6.6.47-sitao
+Purge: linux-image-6.6.47-sitao:amd64 (6.6.47-3)
+End-Date: 2024-09-14  15:39:41
+
+Start-Date: 2024-09-14  15:40:00
+Commandline: apt remove --purge linux-headers-6.6.47-sitao
+Purge: linux-headers-6.6.47-sitao:amd64 (6.6.47-3)
+End-Date: 2024-09-14  15:40:00

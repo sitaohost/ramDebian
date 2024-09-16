@@ -1,0 +1,5 @@
+PRETTY_NAME="ramDebian (based on Debian 12)"
+NAME="ramDebian"
+VERSION="3.1"
+ID=ramdebian
+HOME_URL="https://sitao.org/"

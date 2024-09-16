@@ -1,0 +1,220 @@
+#!/usr/bin/env bash
+
+clear
+# 选择Debian版本
+echo "请选择要安装的Debian版本（默认 2: Debian 12）："
+echo "1) Debian 11 (bullseye)"
+echo "2) Debian 12 (bookworm)"
+echo "3) Debian Testing"
+read -p "输入数字选择版本 [默认 2]：" debian_version
+debian_version=${debian_version:-2}
+
+# 是否使用国内源
+read -p "是否使用国内APT源？(y/n) [默认 y]：" use_cn_sources
+use_cn_sources=${use_cn_sources:-y}
+
+# 函数：设置APT源和DNS（根据版本和地域选择）
+set_apt_sources() {
+    local version=$1
+    local cn=$2
+
+    if [[ $cn == "y" ]]; then
+        if [[ $version == "bullseye" ]]; then
+            cat << EOF > /debian/etc/apt/sources.list
+deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
+deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free
+deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free
+deb http://mirrors.tuna.tsinghua.edu.cn/debian-security/ bullseye-security main contrib non-free
+EOF
+            echo "nameserver 223.5.5.5" > /debian/etc/resolv.conf
+
+        elif [[ $version == "bookworm" ]]; then
+            cat << EOF > /debian/etc/apt/sources.list
+deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free-firmware
+deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm-updates main contrib non-free-firmware
+deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm-backports main contrib non-free-firmware
+deb http://mirrors.tuna.tsinghua.edu.cn/debian-security/ bookworm-security main contrib non-free-firmware
+EOF
+            echo "nameserver 223.5.5.5" > /debian/etc/resolv.conf
+
+        else
+            cat << EOF > /debian/etc/apt/sources.list
+deb http://mirrors.tuna.tsinghua.edu.cn/debian/ testing main contrib non-free-firmware
+deb http://mirrors.tuna.tsinghua.edu.cn/debian/ testing-updates main contrib non-free-firmware
+deb http://mirrors.tuna.tsinghua.edu.cn/debian/ testing-backports main contrib non-free-firmware
+deb http://mirrors.tuna.tsinghua.edu.cn/debian-security/ testing-security main contrib non-free-firmware
+EOF
+            echo "nameserver 223.5.5.5" > /debian/etc/resolv.conf
+        fi
+
+    else
+
+        if [[ $version == "bullseye" ]]; then
+            cat << EOF > /debian/etc/apt/sources.list
+deb http://deb.debian.org/debian/ bullseye main contrib non-free
+deb http://deb.debian.org/debian/ bullseye-updates main contrib non-free
+deb http://deb.debian.org/debian/ bullseye-backports main contrib non-free
+deb http://deb.debian.org/debian-security/ bullseye-security main contrib non-free
+EOF
+            echo "nameserver 8.8.8.8" > /debian/etc/resolv.conf
+        elif [[ $version == "bookworm" ]]; then
+            cat << EOF > /debian/etc/apt/sources.list
+deb http://deb.debian.org/debian/ bookworm main contrib non-free-firmware
+deb http://deb.debian.org/debian/ bookworm-updates main contrib non-free-firmware
+deb http://deb.debian.org/debian/ bookworm-backports main contrib non-free-firmware
+deb http://deb.debian.org/debian-security/ bookworm-security main contrib non-free-firmware
+EOF
+            echo "nameserver 8.8.8.8" > /debian/etc/resolv.conf
+        else
+            cat << EOF > /debian/etc/apt/sources.list
+deb http://deb.debian.org/debian/ testing main contrib non-free-firmware
+deb http://deb.debian.org/debian/ testing-updates main contrib non-free-firmware
+deb http://deb.debian.org/debian/ testing-backports main contrib non-free-firmware
+deb http://deb.debian.org/debian-security/ testing-security main contrib non-free-firmware
+EOF
+            echo "nameserver 8.8.8.8" > /debian/etc/resolv.conf
+        fi
+    fi
+}
+
+# 选择版本并配置APT源
+case $debian_version in
+    1)
+        version="bullseye"
+        ;;
+    2)
+        version="bookworm"
+        ;;
+    3)
+        version="testing"
+        ;;
+    *)
+        echo "无效选择，退出。"
+        exit 1
+        ;;
+esac
+
+# 设置新系统网络(systemd-networkd)
+set_network() {
+
+# 获取活动网络接口名称
+interface=$(ip -o link show | awk '$2 != "lo:" {print substr($2, 1, length($2)-1); exit}')
+
+# 判断是否为 DHCP 配置
+is_dhcp=$(ip addr show $interface | grep -o 'dynamic')
+
+if [ -n "$is_dhcp" ]; then
+    echo "已识别到 DHCP 网络配置"
+else
+    echo "已识别到静态 IP 网络配置"
+
+    # 获取 IP 地址和子网掩码（CIDR 表示法）
+    ip_address=$(ip addr show $interface | awk '/inet / {print $2}' | cut -d'/' -f1)
+    ip_netmask=$(ip addr show $interface | awk '/inet / {print $2}' | cut -d'/' -f2)
+    # 获取网关
+    gateway=$(ip route | awk '/default/ {print $3}')
+fi
+
+if [ -z "$is_dhcp" ]; then
+
+    cat << EOF > /debian/etc/systemd/network/static.network
+[Match]
+Name=en*
+
+[Network]
+Address=${ip_address}/${ip_netmask}
+Gateway=${gateway}
+EOF
+
+else
+   cat << EOF > /debian/etc/systemd/network/dhcp.network
+[Match]
+Name=en*
+
+[Network]
+DHCP=yes
+EOF
+
+fi
+}
+
+# 剩下的磁盘分区和系统安装过程
+read -p "输入硬盘名称：" disk_name
+
+fdisk /dev/${disk_name} << EOF
+o
+n
+p
+1
+
+
+
+w
+EOF
+
+mkfs.ext4 /dev/${disk_name}1
+mkdir /debian
+mount /dev/${disk_name}1 /debian
+
+rm -rf /debian/lost+found/
+
+if [[ $use_cn_sources == "y" ]]; then
+    debootstrap --arch amd64 $version /debian http://mirrors.tuna.tsinghua.edu.cn/debian/
+else
+    debootstrap --arch amd64 $version /debian http://deb.debian.org/debian/
+fi
+
+# 设置APT源和DNS
+set_apt_sources $version $use_cn_sources
+# 设置新系统网络
+set_network
+
+mount -t proc /proc /debian/proc
+mount --rbind /dev /debian/dev
+mount --rbind /sys /debian/sys
+
+genfstab -U /debian > /debian/etc/fstab
+
+# 创建 /debian/setup-chroot.sh
+cat << EOL > /debian/setup-chroot.sh
+#!/bin/bash
+
+# 更新和安装基本软件包
+apt update
+apt install -y linux-image-cloud-amd64 htop vim lsof curl rsync wget xz-utils bash-completion ssh
+
+apt install ntpdate -y
+timedatectl set-timezone 'Asia/Shanghai'
+ntpdate -u ntp.aliyun.com
+
+echo "debian" > /etc/hostname
+cat << EOF > /etc/hosts
+127.0.0.1 localhost debian
+::1       localhost debian
+EOF
+
+apt install -y grub2
+/usr/sbin/grub-install /dev/${disk_name}
+/usr/sbin/grub-mkconfig -o /boot/grub/grub.cfg
+
+echo "root:lin" | chpasswd
+
+systemctl enable systemd-networkd
+systemctl enable ssh
+
+# 执行SSH配置脚本
+bash <(curl -sL https://sitao.org/myscripts/ssh)
+
+exit
+EOL
+
+chmod +x /debian/setup-chroot.sh
+chroot /debian /bin/bash /setup-chroot.sh
+rm /debian/setup-chroot.sh
+
+for i in {3..1}; do
+    echo -ne "安装完成, 系统将在 $i 秒后秒进入新系统...\r"
+    sleep 1
+done
+
+reboot

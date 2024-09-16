@@ -1,0 +1,180 @@
+Package: ikiwiki-hosting-common
+Source: ikiwiki-hosting
+Version: 0.20220716-2+deb12u1
+Installed-Size: 509
+Maintainer: Simon McVittie <smcv@debian.org>
+Architecture: all
+Depends: perl:any
+Description: ikiwiki hosting: common files
+Homepage: https://ikiwiki-hosting.branchable.com/
+Description-md5: a9dbb4ce8cf09b5888a36e71afaa2735
+Section: admin
+Priority: optional
+Filename: pool/main/i/ikiwiki-hosting/ikiwiki-hosting-common_0.20220716-2+deb12u1_all.deb
+Size: 107788
+SHA256: 87e066f972392a34ecf6287b7a675bb9ebfb96ed74e661a0970d5caf6cdfb673
+
+Package: ikiwiki-hosting-dns
+Source: ikiwiki-hosting
+Version: 0.20220716-2+deb12u1
+Installed-Size: 61
+Maintainer: Simon McVittie <smcv@debian.org>
+Architecture: all
+Depends: bind9, ikiwiki-hosting-common, perl:any
+Description: ikiwiki hosting: dns server
+Homepage: https://ikiwiki-hosting.branchable.com/
+Description-md5: 4c1ee9d4ce9b8d5a774afbcf88a097bd
+Section: admin
+Priority: optional
+Filename: pool/main/i/ikiwiki-hosting/ikiwiki-hosting-dns_0.20220716-2+deb12u1_all.deb
+Size: 23376
+SHA256: 460f1e5a6f6cd9449f9b899ec56f206f04d2f61fa1b56f8cfcddc41dc99d8c1b
+
+Package: ikiwiki-hosting-web
+Source: ikiwiki-hosting
+Version: 0.20220716-2+deb12u1
+Installed-Size: 248
+Maintainer: Simon McVittie <smcv@debian.org>
+Architecture: amd64
+Depends: acl, adduser, apache2, apache2-suexec-pristine | apache2-suexec, dnsutils, gcc | clang | tcc, git (>= 1:1.7.0), gitweb (>= 1:1.7.0), ikiwiki (>= 3.20100723), ikiwiki-hosting-common, libauthen-passphrase-perl, libc6-dev | libc-dev, libcgi-formbuilder-perl (>= 3.05), libcgi-pm-perl, libcgi-session-perl (>= 4.14-1), libcoy-perl, libcrypt-ssleay-perl, libdata-compare-perl, libdatetime-perl, libfile-mimeinfo-perl, libgravatar-url-perl, libhighlight-perl, libhtml-tree-perl, libimage-magick-perl | perlmagick, liblocale-gettext-perl (>= 1.05-1), liblwpx-paranoidagent-perl, libmail-sendmail-perl, libmailtools-perl, libnet-inet6glue-perl, libnet-openid-consumer-perl (>= 1.03), librpc-xml-perl, libtext-csv-perl, libtext-markdown-perl (>= 1.0.26-1~bpo50+1), libtext-multimarkdown-perl, libtext-textile-perl, libtext-typography-perl, libtext-wikicreole-perl, libtext-wikiformat-perl, libtimedate-perl, libxml-feed-perl, libxml-simple-perl, libyaml-perl, libyaml-syck-perl, lsb-base, moreutils (>= 0.43), openssl, polygen, polygen-data, python3, python3-docutils, rsync, uuid, perl:any, libc6 (>= 2.34)
+Pre-Depends: init-system-helpers (>= 1.54~)
+Recommends: analog, certbot
+Conflicts: parallel
+Description: ikiwiki hosting: web server
+Homepage: https://ikiwiki-hosting.branchable.com/
+Description-md5: 241a687ddb963bcb7f26722ed3701479
+Section: admin
+Priority: optional
+Filename: pool/main/i/ikiwiki-hosting/ikiwiki-hosting-web_0.20220716-2+deb12u1_amd64.deb
+Size: 56868
+SHA256: d5ac1c83e24d1a6a75f9a18b6c3bb38ce9f3e024677fe9245f8e59ebb5584483
+
+Package: xscreensaver
+Version: 6.06+dfsg1-3+deb12u1
+Installed-Size: 1732
+Maintainer: Tormod Volden <debian.tormod@gmail.com>
+Architecture: amd64
+Depends: xscreensaver-data, init-system-helpers (>= 1.52), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libglib2.0-0 (>= 2.49.3), libgtk-3-0 (>= 3.16.2), libpam0g (>= 0.99.7.1), libsystemd0 (>= 243), libx11-6 (>= 2:1.2.99.901), libxext6, libxft2 (>> 2.1.1), libxi6 (>= 2:1.2.99.4), libxinerama1 (>= 2:1.1.4), libxml2 (>= 2.7.4), libxrandr2 (>= 2:1.2.99.2), libxt6, libxxf86vm1
+Recommends: libjpeg-turbo-progs, miscfiles | wordlist, perl, fonts-urw-base35 | xfonts-100dpi
+Suggests: fortune, gdm3 | kdm-gdmcompat, qcam | streamer, www-browser, xdaliclock, xfishtank, xscreensaver-data-extra, xscreensaver-gl, xscreensaver-gl-extra
+Description: Screensaver daemon and frontend for X11
+Homepage: https://www.jwz.org/xscreensaver/
+Description-md5: f28418049591dc7ea8833c590fe2406a
+Tag: interface::graphical, interface::x11, role::program, scope::application,
+ uitoolkit::gtk, x11::application, x11::screensaver
+Section: x11
+Priority: optional
+Filename: pool/main/x/xscreensaver/xscreensaver_6.06+dfsg1-3+deb12u1_amd64.deb
+Size: 440288
+SHA256: 7f09fd540a92989da1ee34a5c924d999c21394e9956763e0b4b5134674eb4e04
+
+Package: xscreensaver-data
+Source: xscreensaver
+Version: 6.06+dfsg1-3+deb12u1
+Installed-Size: 2353
+Maintainer: Tormod Volden <debian.tormod@gmail.com>
+Architecture: amd64
+Depends: libwww-perl, libc6 (>= 2.34), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.16.0), libx11-6, libxext6, libxft2 (>> 2.1.1), libxt6
+Suggests: xscreensaver
+Description: Screen saver modules for screensaver frontends
+Homepage: https://www.jwz.org/xscreensaver/
+Description-md5: 536b56342032dfd837382af49582b3ca
+Tag: role::app-data, uitoolkit::gtk, x11::screensaver
+Section: x11
+Priority: optional
+Filename: pool/main/x/xscreensaver/xscreensaver-data_6.06+dfsg1-3+deb12u1_amd64.deb
+Size: 379016
+SHA256: 19cf3217bcd02a489ba8f7759c6533757491410e87a2f0ce423d0745fd187230
+
+Package: xscreensaver-data-extra
+Source: xscreensaver
+Version: 6.06+dfsg1-3+deb12u1
+Installed-Size: 8549
+Maintainer: Tormod Volden <debian.tormod@gmail.com>
+Architecture: amd64
+Depends: dictionaries-common, libjpeg-turbo-progs, netpbm, xscreensaver-data, libc6 (>= 2.34), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.16.0), libx11-6, libxext6, libxft2 (>> 2.1.1), libxt6
+Description: Extra screen saver modules for screensaver frontends
+Homepage: https://www.jwz.org/xscreensaver/
+Description-md5: e2e30af33c7cede942543fe590347d31
+Tag: interface::graphical, interface::x11, role::app-data, role::program,
+ uitoolkit::gtk, x11::application, x11::screensaver
+Section: x11
+Priority: optional
+Filename: pool/main/x/xscreensaver/xscreensaver-data-extra_6.06+dfsg1-3+deb12u1_amd64.deb
+Size: 1390032
+SHA256: 008e2e3524f99d13ad7854c9b42a7158b0c9dabab19375cc6b695f40e5416285
+
+Package: xscreensaver-gl
+Source: xscreensaver
+Version: 6.06+dfsg1-3+deb12u1
+Installed-Size: 19638
+Maintainer: Tormod Volden <debian.tormod@gmail.com>
+Architecture: amd64
+Depends: libwww-perl, libcap2-bin, libc6 (>= 2.34), libegl1, libgdk-pixbuf-2.0-0 (>= 2.22.0), libgl1, libglib2.0-0 (>= 2.16.0), libglu1-mesa | libglu1, libx11-6, libxext6, libxft2 (>> 2.1.1), libxt6
+Suggests: xscreensaver
+Description: GL(Mesa) screen saver modules for screensaver frontends
+Homepage: https://www.jwz.org/xscreensaver/
+Description-md5: 66869878b1853aa8bc96303f75f6fddb
+Tag: interface::3d, interface::graphical, interface::x11, role::program,
+ scope::application, uitoolkit::gtk, x11::application, x11::screensaver
+Section: x11
+Priority: optional
+Filename: pool/main/x/xscreensaver/xscreensaver-gl_6.06+dfsg1-3+deb12u1_amd64.deb
+Size: 8427948
+SHA256: ada050eafeb1d2ab304e22a9a5a33abb6cb271f9d4cb297579b8dbec84fe4bb6
+
+Package: xscreensaver-gl-extra
+Source: xscreensaver
+Version: 6.06+dfsg1-3+deb12u1
+Installed-Size: 11430
+Maintainer: Tormod Volden <debian.tormod@gmail.com>
+Architecture: amd64
+Depends: xscreensaver-gl, libc6 (>= 2.34), libegl1, libgdk-pixbuf-2.0-0 (>= 2.22.0), libgl1, libgle3 (>= 3.1.0), libglib2.0-0 (>= 2.16.0), libglu1-mesa | libglu1, libx11-6, libxext6, libxft2 (>> 2.1.1), libxt6
+Description: Extra GL(Mesa) screen saver modules for screensaver frontends
+Homepage: https://www.jwz.org/xscreensaver/
+Description-md5: 21a355da6381e7acb7c8bbf7405efa4d
+Tag: hardware::opengl, hardware::video, interface::graphical, interface::x11,
+ role::app-data, role::program, uitoolkit::gtk, x11::application,
+ x11::screensaver
+Section: x11
+Priority: optional
+Filename: pool/main/x/xscreensaver/xscreensaver-gl-extra_6.06+dfsg1-3+deb12u1_amd64.deb
+Size: 4785060
+SHA256: cd992a9ff44b7d21d76bd0abacfcfa49f0a0cdc4b96982b8566ec561cd16dc32
+
+Package: xscreensaver-screensaver-bsod
+Source: xscreensaver
+Version: 6.06+dfsg1-3+deb12u1
+Installed-Size: 456
+Maintainer: Tormod Volden <debian.tormod@gmail.com>
+Architecture: amd64
+Depends: xscreensaver-data, libc6 (>= 2.34), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.16.0), libx11-6, libxext6, libxft2 (>> 2.1.1), libxt6
+Description: BSOD screen saver module from XScreenSaver
+Homepage: https://www.jwz.org/xscreensaver/
+Description-md5: 5121b9ed12328a3984b2b9690b68a805
+Tag: implemented-in::c, interface::graphical, interface::x11, role::program,
+ uitoolkit::gtk, x11::screensaver
+Section: x11
+Priority: optional
+Filename: pool/main/x/xscreensaver/xscreensaver-screensaver-bsod_6.06+dfsg1-3+deb12u1_amd64.deb
+Size: 233248
+SHA256: 1ab4c3a68a4a6f28ab3042c47e7ce0a861d28316194b1d16bda37d43599603c9
+
+Package: xscreensaver-screensaver-webcollage
+Source: xscreensaver
+Version: 6.06+dfsg1-3+deb12u1
+Installed-Size: 182
+Maintainer: Tormod Volden <debian.tormod@gmail.com>
+Architecture: amd64
+Depends: libwww-perl, xscreensaver-data, libc6 (>= 2.34), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.12.0), libjpeg62-turbo (>= 1.3.1)
+Description: Webcollage screen saver module from XScreenSaver
+Homepage: https://www.jwz.org/xscreensaver/
+Description-md5: 98b8867f7f079391ec91896cc6ea46c5
+Tag: game::toys, interface::graphical, interface::x11, role::program,
+ uitoolkit::gtk, x11::screensaver
+Section: x11
+Priority: optional
+Filename: pool/main/x/xscreensaver/xscreensaver-screensaver-webcollage_6.06+dfsg1-3+deb12u1_amd64.deb
+Size: 48720
+SHA256: 4763416639a29bbb7e88c1d36813f30c699b0a2939c956dc253c08ec00cfe958
+

@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/games
+/usr/games/pacman
+/usr/share
+/usr/share/applications
+/usr/share/applications/pacman.desktop
+/usr/share/doc
+/usr/share/doc/pacman
+/usr/share/doc/pacman/changelog.Debian.amd64.gz
+/usr/share/doc/pacman/changelog.Debian.gz
+/usr/share/doc/pacman/copyright
+/usr/share/man
+/usr/share/man/man6
+/usr/share/man/man6/pacman.6.gz
+/usr/share/pixmaps
+/usr/share/pixmaps/pacmania.xpm

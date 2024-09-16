@@ -1,0 +1,18 @@
+Package: firmware-nvidia-gsp
+Description-md5: 662e57a0e8a9d9abcd4ca747c6e5e11f
+Description-en: NVIDIA GSP firmware
+ The GPU System Processor (GSP) was first introduced in the Turing
+ architecture and supports accelerating tasks traditionally performed
+ by the driver on the CPU.
+ .
+ This package provides the firmware to drive the GSP.
+
+Package: firmware-nvidia-tesla-gsp
+Description-md5: 3f151c5c845fe50a947f350b01607a27
+Description-en: NVIDIA GSP firmware (Tesla version)
+ The GPU System Processor (GSP) was first introduced in the Turing
+ architecture and supports accelerating tasks traditionally performed
+ by the driver on the CPU.
+ .
+ This package provides the firmware to drive the GSP.
+

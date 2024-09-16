@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/archlinux-keyring
+/usr/share/doc/archlinux-keyring/README.Debian
+/usr/share/doc/archlinux-keyring/changelog.Debian.gz
+/usr/share/doc/archlinux-keyring/copyright
+/usr/share/keyrings
+/usr/share/keyrings/archlinux-revoked
+/usr/share/keyrings/archlinux-trusted
+/usr/share/keyrings/archlinux.gpg

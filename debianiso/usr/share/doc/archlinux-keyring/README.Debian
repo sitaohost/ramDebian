@@ -1,0 +1,9 @@
+archlinux-keyring for Debian
+----------------------------
+
+This package is meant to be used in conjuction with `pacman-package-manager`.
+Similar to why `ubuntu-keyring` is in Debian, having this allows using Debian
+and Debian derivatives for generating Arch Linux images (e.g. using
+[mkosi](https://github.com/systemd/mkosi)).
+
+ -- Michel Alexandre Salim <michel@michel-slm.name>  Wed, 03 Aug 2022 15:04:38 -0500

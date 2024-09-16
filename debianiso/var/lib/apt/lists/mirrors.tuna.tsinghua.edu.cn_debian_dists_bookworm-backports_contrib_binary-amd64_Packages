@@ -1,0 +1,546 @@
+Package: diaspora-installer
+Version: 0.7.18.2+debian3~bpo12+1
+Installed-Size: 111
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Architecture: all
+Replaces: diaspora
+Depends: build-essential, diaspora-common (= 0.7.18.2+debian3~bpo12+1), ghostscript, imagemagick, libcurl4-openssl-dev, libffi-dev, libmagickwand-dev, libpq-dev, libruby3.1, libssl-dev, libxml2-dev, libxslt-dev, rsync, ruby-bundler, ruby-dev, ruby-http-parser, tzdata, wget, zlib1g-dev
+Conflicts: diaspora, libruby2.7
+Description: distributed social networking service - installer
+Homepage: https://wiki.debian.org/Diaspora
+Description-md5: 120c7fb469648e6eb3e942926e8b1ea0
+Section: contrib/net
+Priority: optional
+Filename: pool/contrib/d/diaspora-installer/diaspora-installer_0.7.18.2+debian3~bpo12+1_all.deb
+Size: 21584
+SHA256: f71649c6221b647dca57e7c8e9c045a4544a08103e48714d28465d545a1139c9
+
+Package: diaspora-installer-mysql
+Source: diaspora-installer
+Version: 0.7.18.2+debian3~bpo12+1
+Installed-Size: 12
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Architecture: all
+Depends: dbconfig-mysql | dbconfig-no-thanks, default-libmysqlclient-dev, default-mysql-server | virtual-mysql-server, diaspora-installer (= 0.7.18.2+debian3~bpo12+1)
+Description: distributed social networking service - installer (with MySQL)
+Homepage: https://wiki.debian.org/Diaspora
+Description-md5: c18a155ca94ebb0900ab3ea2aa77e4b9
+Section: contrib/ruby
+Priority: optional
+Filename: pool/contrib/d/diaspora-installer/diaspora-installer-mysql_0.7.18.2+debian3~bpo12+1_all.deb
+Size: 4852
+SHA256: 05e50f43d84a1cbff57c4019d867d6677007d1307f9202f6005a117192f40a70
+
+Package: libhwloc-contrib-plugins
+Source: hwloc-contrib
+Version: 2.11.0-1~bpo12+1
+Installed-Size: 54
+Maintainer: Samuel Thibault <sthibault@debian.org>
+Architecture: amd64
+Depends: libc6 (>= 2.38), libcudart12, libnvidia-ml1 (>= 470) | libnvidia-ml.so.1 (>= 470), libhwloc15 (>= 2.11.0~), libhwloc15 (<< 2.11.0A)
+Description: Hierarchical view of the machine - contrib plugins
+Multi-Arch: same
+Homepage: https://www.open-mpi.org/projects/hwloc/
+Description-md5: 2b02fbf995ab5fe6645ca4e4ad3e8d3f
+Section: contrib/libs
+Priority: optional
+Filename: pool/contrib/h/hwloc-contrib/libhwloc-contrib-plugins_2.11.0-1~bpo12+1_amd64.deb
+Size: 12632
+SHA256: ae8231df40afc8211c63e6641b2577e51e23d8cb5fa6aafa0da38072a39b8a7c
+
+Package: josm-installer
+Version: 0.0.5+svn19018~bpo12+1
+Installed-Size: 317
+Maintainer: Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>
+Architecture: all
+Depends: default-jre (>= 2:1.11) | java11-runtime, fonts-noto, proj-data, python3, python3-requests
+Conflicts: josm
+Description: Editor for OpenStreetMap (installer)
+Homepage: https://josm.openstreetmap.de
+Description-md5: 6a03f3c780cd85e845b96acc9c4c992b
+Section: contrib/utils
+Priority: optional
+Filename: pool/contrib/j/josm-installer/josm-installer_0.0.5+svn19018~bpo12+1_all.deb
+Size: 174584
+SHA256: 87498888c16598af50a34e545d525364845309c1ce8a68cd98db4c4af92256cc
+
+Package: openrct2
+Version: 0.4.14+ds-1~bpo12+1
+Installed-Size: 25300
+Maintainer: Mathias Gibbens <gibmat@debian.org>
+Architecture: amd64
+Depends: openrct2-data (= 0.4.14+ds-1~bpo12+1), openrct2-objects (>= 1.4.7), openrct2-title-sequences (>= 0.4.14), libc6 (>= 2.35), libcurl4 (>= 7.16.2), libduktape207 (>= 2.0.3), libflac12 (>= 1.3.0), libfontconfig1 (>= 2.12.6), libgcc-s1 (>= 3.4), libgzstream0 (>= 1.5+dfsg), libicu72 (>= 72.1~rc-1~), libpng16-16 (>= 1.6.2-1), libsdl2-2.0-0 (>= 2.0.18), libsdl2-ttf-2.0-0 (>= 2.0.15), libspeexdsp1 (>= 1.2.1), libssl3 (>= 3.0.0), libstdc++6 (>= 12), libvorbisfile3 (>= 1.1.2), libzip4 (>= 0.11.2), zlib1g (>= 1:1.2.0)
+Recommends: openrct2-openmsx (>= 1.6), openrct2-opensfx (>= 1.0.5), zenity
+Suggests: innoextract
+Description: Open-source re-implementation of RollerCoaster Tycoon 2
+Multi-Arch: foreign
+Homepage: https://openrct2.io/
+Description-md5: 136f2157dc662607863d657b37a31ab7
+Section: contrib/games
+Priority: optional
+Filename: pool/contrib/o/openrct2/openrct2_0.4.14+ds-1~bpo12+1_amd64.deb
+Size: 5504640
+SHA256: 83bc5e62cfb518531b39ae3b039a438996d6bd24c947e05848b1cd9850ae5c84
+
+Package: openrct2-data
+Source: openrct2
+Version: 0.4.14+ds-1~bpo12+1
+Installed-Size: 8459
+Maintainer: Mathias Gibbens <gibmat@debian.org>
+Architecture: all
+Description: Required game data for OpenRCT2
+Multi-Arch: foreign
+Homepage: https://openrct2.io/
+Description-md5: ba13feafd937c7243870a1c8ec2b7d37
+Section: contrib/games
+Priority: optional
+Filename: pool/contrib/o/openrct2/openrct2-data_0.4.14+ds-1~bpo12+1_all.deb
+Size: 2161636
+SHA256: 9115d1ae840cc180e64cfd5cd2a775c82c091ecdfa72b6825b56f99ee41722a0
+
+Package: openrct2-objects
+Version: 1.4.7+dfsg-1~bpo12+1
+Installed-Size: 9940
+Maintainer: Mathias Gibbens <gibmat@debian.org>
+Architecture: all
+Description: Object definitions for OpenRCT2
+Multi-Arch: foreign
+Homepage: https://openrct2.io/
+Description-md5: f6bc7e007707cf7a1dba4734f5d1ca70
+Section: contrib/games
+Priority: optional
+Filename: pool/contrib/o/openrct2-objects/openrct2-objects_1.4.7+dfsg-1~bpo12+1_all.deb
+Size: 3977128
+SHA256: b9838cdb5285c3e8dab7f2982b9a28a660e65692f4446379a4040257e5dafd96
+
+Package: openrct2-openmsx
+Version: 1.6-1~bpo12+1
+Installed-Size: 41948
+Maintainer: Mathias Gibbens <gibmat@debian.org>
+Architecture: all
+Description: New versions of the songs from RollerCoaster Tycoon 2
+Multi-Arch: foreign
+Homepage: https://openrct2.io/
+Description-md5: 29cffff1edb40b4341c0e58b2bbe1286
+Section: contrib/games
+Priority: optional
+Filename: pool/contrib/o/openrct2-openmsx/openrct2-openmsx_1.6-1~bpo12+1_all.deb
+Size: 42929316
+SHA256: 4ac6e63c44963792488d7540dd34fadf0aeeaf3beca31f511841a6439ba8bec5
+
+Package: openrct2-opensfx
+Version: 1.0.5-1~bpo12+1
+Installed-Size: 3952
+Maintainer: Mathias Gibbens <gibmat@debian.org>
+Architecture: all
+Description: Project to create a replacement for RCT2's sound effects file
+Multi-Arch: foreign
+Homepage: https://openrct2.io/
+Description-md5: 6b3b132eb8b7ef168c450910d0f11ffa
+Section: contrib/games
+Priority: optional
+Filename: pool/contrib/o/openrct2-opensfx/openrct2-opensfx_1.0.5-1~bpo12+1_all.deb
+Size: 4019548
+SHA256: 4a51b9919ebe0d0d8281e0f02731bbdc8711b7a1426b6caa7df7751854796d50
+
+Package: openrct2-title-sequences
+Version: 0.4.14-1~bpo12+1
+Installed-Size: 7638
+Maintainer: Mathias Gibbens <gibmat@debian.org>
+Architecture: all
+Description: Title sequences for OpenRCT2
+Multi-Arch: foreign
+Homepage: https://openrct2.io/
+Description-md5: 2950e021be87789c2f6f89fcc1915f8c
+Section: contrib/games
+Priority: optional
+Filename: pool/contrib/o/openrct2-title-sequences/openrct2-title-sequences_0.4.14-1~bpo12+1_all.deb
+Size: 7797636
+SHA256: c8ade264d96cda0441272a83e3e06ff0702bc274f4221c9e3c7685a856cd987e
+
+Package: sabnzbdplus
+Version: 4.3.3+dfsg-1~bpo12+1
+Installed-Size: 3682
+Maintainer: Jeroen Ploemen <jcfp@debian.org>
+Architecture: all
+Depends: python3:any, apprise, libjs-bootstrap, libjs-jquery, libjs-jquery-ui, libjs-moment, par2, python3-chardet, python3-cheetah, python3-cheroot, python3-cherrypy3, python3-configobj, python3-cryptography, python3-feedparser, python3-guessit, python3-portend, python3-puremagic, python3-rebulk, python3-sabctools (>= 8.2.0), python3-sabctools (<< 8.3.0~), python3-socks, python3-ujson, unrar | rar
+Pre-Depends: init-system-helpers (>= 1.54~)
+Recommends: gir1.2-xapp-1.0 (>= 1.6), libavahi-compat-libdnssd1, 7zip | p7zip-full, python3-dbus, python3-notify2
+Description: web-based binary newsreader with nzb support
+Homepage: https://sabnzbd.org
+Description-md5: 9af99c00c3efdc0801f9fda555ddbd78
+Section: contrib/net
+Priority: optional
+Filename: pool/contrib/s/sabnzbdplus/sabnzbdplus_4.3.3+dfsg-1~bpo12+1_all.deb
+Size: 679960
+SHA256: d836c885ac0134b0ad2184bd24cd52295432b59f6df8a242d400ffcf0b1ab25c
+
+Package: speech-dispatcher-baratinoo
+Source: speech-dispatcher-contrib
+Version: 0.11.5-4~bpo12+1
+Installed-Size: 95
+Maintainer: Debian TTS Team <tts-project@alioth-lists.debian.net>
+Architecture: amd64
+Replaces: speech-dispatcher (<< 0.10.2-1)
+Depends: libc6 (>= 2.34), libdotconf0 (>= 1.0.13), libglib2.0-0 (>= 2.36), libltdl7 (>= 2.4.7), speech-dispatcher (>= 0.11.5), speech-dispatcher (<< 0.11.5.0~)
+Recommends: voxygen
+Breaks: speech-dispatcher (<< 0.10.2-1)
+Description: Speech Dispatcher: Baratinoo (VoxyGen) output module
+Multi-Arch: foreign
+Homepage: http://devel.freebsoft.org/speechd
+Description-md5: 084e6e01506ac290c402b752a5ca7014
+Section: contrib/sound
+Priority: optional
+Filename: pool/contrib/s/speech-dispatcher-contrib/speech-dispatcher-baratinoo_0.11.5-4~bpo12+1_amd64.deb
+Size: 30840
+SHA256: bcee005e183b907734621b6897c64313983ce5ef6713e6e4f826d55550c7d21b
+
+Package: speech-dispatcher-ivona
+Source: speech-dispatcher-contrib
+Version: 0.11.5-4~bpo12+1
+Installed-Size: 89
+Maintainer: Debian TTS Team <tts-project@alioth-lists.debian.net>
+Architecture: amd64
+Replaces: speech-dispatcher (<< 0.10.2-3)
+Depends: libc6 (>= 2.34), libdotconf0 (>= 1.0.13), libdumbtts0 (>= 0.3.2), libglib2.0-0 (>= 2.36), libltdl7 (>= 2.4.7), libsndfile1 (>= 1.0.20), speech-dispatcher (>= 0.11.5), speech-dispatcher (<< 0.11.5.0~)
+Breaks: speech-dispatcher (<< 0.10.2-3)
+Description: Speech Dispatcher: Ivona output module
+Multi-Arch: foreign
+Homepage: http://devel.freebsoft.org/speechd
+Description-md5: 86870f9edb7fda6696c749808c9ab8ad
+Section: contrib/sound
+Priority: optional
+Filename: pool/contrib/s/speech-dispatcher-contrib/speech-dispatcher-ivona_0.11.5-4~bpo12+1_amd64.deb
+Size: 29600
+SHA256: f2339c9cbba7da8997f2e0b535f4b1e295edeaac3948761f812eab589d468d62
+
+Package: speech-dispatcher-kali
+Source: speech-dispatcher-contrib
+Version: 0.11.5-4~bpo12+1
+Installed-Size: 85
+Maintainer: Debian TTS Team <tts-project@alioth-lists.debian.net>
+Architecture: amd64
+Replaces: speech-dispatcher (<< 0.10.2-1)
+Depends: libc6 (>= 2.34), libdotconf0 (>= 1.0.13), libglib2.0-0 (>= 2.36), libltdl7 (>= 2.4.7), speech-dispatcher (>= 0.11.5), speech-dispatcher (<< 0.11.5.0~)
+Recommends: kali-tts
+Breaks: speech-dispatcher (<< 0.10.2-1)
+Description: Speech Dispatcher: Kali output module
+Multi-Arch: foreign
+Homepage: http://devel.freebsoft.org/speechd
+Description-md5: ed862f91a9dfc6b45f556e27600025f3
+Section: contrib/sound
+Priority: optional
+Filename: pool/contrib/s/speech-dispatcher-contrib/speech-dispatcher-kali_0.11.5-4~bpo12+1_amd64.deb
+Size: 27076
+SHA256: 16e041f75e7862d79e257620ddefa8160d2af03d5823784830bf63d4b6623b45
+
+Package: speech-dispatcher-pico
+Source: speech-dispatcher-contrib
+Version: 0.11.5-4~bpo12+1
+Installed-Size: 86
+Maintainer: Debian TTS Team <tts-project@alioth-lists.debian.net>
+Architecture: amd64
+Replaces: speech-dispatcher (<< 0.10.2-1), speech-dispatcher-contrib (<< 0.8.5-5)
+Depends: libc6 (>= 2.34), libdotconf0 (>= 1.0.13), libglib2.0-0 (>= 2.36), libltdl7 (>= 2.4.7), libttspico0 (>= 1.0), speech-dispatcher (>= 0.11.5), speech-dispatcher (<< 0.11.5.0~)
+Breaks: speech-dispatcher (<< 0.10.2-1), speech-dispatcher-contrib (<< 0.8.5-5)
+Description: Speech Dispatcher: Pico output module
+Multi-Arch: foreign
+Homepage: http://devel.freebsoft.org/speechd
+Description-md5: 3f7b0336934407e292229150a3407010
+Section: contrib/sound
+Priority: optional
+Filename: pool/contrib/s/speech-dispatcher-contrib/speech-dispatcher-pico_0.11.5-4~bpo12+1_amd64.deb
+Size: 27824
+SHA256: b48690c0bf5d4b6b3084862bb61877d3b5222064950b3bb111a57ac8934ef5b8
+
+Package: speech-dispatcher-voxin
+Source: speech-dispatcher-contrib
+Version: 0.11.5-4~bpo12+1
+Installed-Size: 115
+Maintainer: Debian TTS Team <tts-project@alioth-lists.debian.net>
+Architecture: amd64
+Replaces: speech-dispatcher (<< 0.10.1-3)
+Depends: libc6 (>= 2.34), libdotconf0 (>= 1.0.13), libglib2.0-0 (>= 2.36), libltdl7 (>= 2.4.7), speech-dispatcher-audio-plugins (>= 0.11.5), speech-dispatcher-audio-plugins (<< 0.11.5.0~), speech-dispatcher (>= 0.11.5), speech-dispatcher (<< 0.11.5.0~)
+Breaks: speech-dispatcher (<< 0.10.1-3)
+Description: Speech Dispatcher: Voxin output module
+Multi-Arch: foreign
+Homepage: http://devel.freebsoft.org/speechd
+Description-md5: 83b1d95c5cad4931b0402c5c5475c962
+Section: contrib/sound
+Priority: optional
+Filename: pool/contrib/s/speech-dispatcher-contrib/speech-dispatcher-voxin_0.11.5-4~bpo12+1_amd64.deb
+Size: 36304
+SHA256: 9574ba8da6f17c17642478e7ac60e4286dbcc1b3ede51c74ba56e4e29a754260
+
+Package: libnvpair3linux
+Source: zfs-linux
+Version: 2.2.6-1~bpo12+1
+Installed-Size: 192
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: amd64
+Replaces: libnvpair1, libnvpair3
+Depends: libc6 (>= 2.30), libtirpc3 (>= 1.0.2)
+Breaks: libnvpair1, libnvpair3
+Description: Solaris name-value library for Linux
+Homepage: https://zfsonlinux.org/
+Description-md5: dff01db1623b4ac78db22bcc089d9e49
+Section: contrib/libs
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/libnvpair3linux_2.2.6-1~bpo12+1_amd64.deb
+Size: 60884
+SHA256: 91013aaac8aa158d70896581596e93d16f962e5e9ef09ca7d9fa288393cb2ea1
+
+Package: libpam-zfs
+Source: zfs-linux
+Version: 2.2.6-1~bpo12+1
+Installed-Size: 103
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: amd64
+Depends: libpam-runtime, libc6 (>= 2.14), libnvpair3linux (>= 0.8.2), libpam0g (>= 1.1.0), libssl3 (>= 3.0.0), libzfs4linux (>= 2.2)
+Description: PAM module for managing encryption keys for ZFS
+Homepage: https://zfsonlinux.org/
+Description-md5: 22667c0f995168539097f168459e100b
+Section: contrib/admin
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/libpam-zfs_2.2.6-1~bpo12+1_amd64.deb
+Size: 33564
+SHA256: 40cc4ac8de59808fa678746ec3a2fee06015b8825f90b3fd3c29fd498ad9927c
+
+Package: libuutil3linux
+Source: zfs-linux
+Version: 2.2.6-1~bpo12+1
+Installed-Size: 152
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: amd64
+Replaces: libuutil1, libuutil3
+Depends: libc6 (>= 2.34)
+Breaks: libuutil1, libuutil3
+Description: Solaris userland utility library for Linux
+Homepage: https://zfsonlinux.org/
+Description-md5: 9bf9c128615174d04a0bb25b39d60322
+Section: contrib/libs
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/libuutil3linux_2.2.6-1~bpo12+1_amd64.deb
+Size: 51984
+SHA256: 83267052b03ac4b38059e5378c467ce58f1ef407c684d1775daf9950595ba3ee
+
+Package: libzfs4linux
+Source: zfs-linux
+Version: 2.2.6-1~bpo12+1
+Installed-Size: 645
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: amd64
+Replaces: libzfs2, libzfs4
+Depends: libblkid1 (>= 2.16), libc6 (>= 2.34), libnvpair3linux (>= 0.8.2), libssl3 (>= 3.0.0), libudev1 (>= 183), libuuid1 (>= 2.16), libuutil3linux (>= 0.8.2), zlib1g (>= 1:1.1.4)
+Recommends: libcurl4
+Breaks: libzfs2, libzfs4
+Description: OpenZFS filesystem library for Linux - general support
+Homepage: https://zfsonlinux.org/
+Description-md5: 68404c691e40434a1c18cb823bdc6f84
+Section: contrib/libs
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/libzfs4linux_2.2.6-1~bpo12+1_amd64.deb
+Size: 229008
+SHA256: ade76d8568f33034c7b14a8de567ccc551d6648fc08a8e79d9eafe7b95b0945e
+
+Package: libzfsbootenv1linux
+Source: zfs-linux
+Version: 2.2.6-1~bpo12+1
+Installed-Size: 105
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: amd64
+Replaces: libzfs2, libzfs4
+Depends: libc6 (>= 2.8), libnvpair3linux (>= 0.8.2), libzfs4linux (>= 2.0)
+Breaks: libzfs2, libzfs4
+Description: OpenZFS filesystem library for Linux - label info support
+Homepage: https://zfsonlinux.org/
+Description-md5: ba1246d18e334f582c2be912dfe69655
+Section: contrib/libs
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/libzfsbootenv1linux_2.2.6-1~bpo12+1_amd64.deb
+Size: 37508
+SHA256: 89358e555ec4156cfb7e7ac4ac6ecbbe2b3721d80ed1345c64bc36c7aa5dc977
+
+Package: libzfslinux-dev
+Source: zfs-linux
+Version: 2.2.6-1~bpo12+1
+Installed-Size: 11487
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: amd64
+Provides: libnvpair-dev, libuutil-dev
+Depends: libblkid-dev, libssl-dev | libssl1.0-dev, libnvpair3linux (= 2.2.6-1~bpo12+1), libuutil3linux (= 2.2.6-1~bpo12+1), libzfs4linux (= 2.2.6-1~bpo12+1), libzfsbootenv1linux (= 2.2.6-1~bpo12+1), libzpool5linux (= 2.2.6-1~bpo12+1)
+Description: OpenZFS filesystem development files for Linux
+Homepage: https://zfsonlinux.org/
+Description-md5: f1a2250776c6f7f70d2a90196a6ab150
+Section: contrib/libdevel
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/libzfslinux-dev_2.2.6-1~bpo12+1_amd64.deb
+Size: 1945820
+SHA256: deb84e3982b9fc6315729b70b7408d6d2a327c506b538265a75f96706616818d
+
+Package: libzpool5linux
+Source: zfs-linux
+Version: 2.2.6-1~bpo12+1
+Installed-Size: 4329
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: amd64
+Replaces: libzpool2, libzpool5
+Depends: libblkid1 (>= 2.16), libc6 (>= 2.34), libnvpair3linux (>= 0.8.2), libudev1 (>= 183), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4)
+Breaks: libzpool2, libzpool5
+Description: OpenZFS pool library for Linux
+Homepage: https://zfsonlinux.org/
+Description-md5: 5411b703c1dae8e2c3f38bbe7330f01d
+Section: contrib/libs
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/libzpool5linux_2.2.6-1~bpo12+1_amd64.deb
+Size: 1340248
+SHA256: 3e7fa7bbd9222557aee951c9cb7ba126ffb20e4b9a5110faf56c335a04c3e9ee
+
+Package: python3-pyzfs
+Source: zfs-linux
+Version: 2.2.6-1~bpo12+1
+Installed-Size: 433
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: amd64
+Depends: python3-cffi, zfsutils-linux (= 2.2.6-1~bpo12+1), python3-cffi-backend-api-min (<= 9729), python3-cffi-backend-api-max (>= 9729), python3:any
+Description: wrapper for libzfs_core C library
+Homepage: https://zfsonlinux.org/
+Description-md5: cc3c162e8790777a7a60f39c29c8ee89
+Section: contrib/python
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/python3-pyzfs_2.2.6-1~bpo12+1_amd64.deb
+Size: 69704
+SHA256: 41333aa92fba2e3c36207c915452b2a500bdb64afe29bc3599b825770e5d154e
+
+Package: pyzfs-doc
+Source: zfs-linux
+Version: 2.2.6-1~bpo12+1
+Installed-Size: 551
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: all
+Depends: libjs-sphinxdoc (>= 5.2)
+Recommends: python3-pyzfs
+Description: wrapper for libzfs_core C library (documentation)
+Homepage: https://zfsonlinux.org/
+Description-md5: 18d5a3ceb2ed973459a34b4af3cc06cc
+Section: contrib/doc
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/pyzfs-doc_2.2.6-1~bpo12+1_all.deb
+Size: 63192
+SHA256: fdf535b5f52a3b12c388491826bdeff4e7414e3b680d3108b5576614a8107590
+
+Package: zfs-dkms
+Source: zfs-linux
+Version: 2.2.6-1~bpo12+1
+Installed-Size: 18685
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: all
+Replaces: spl-dkms
+Provides: zfs-modules
+Depends: dkms (>> 2.1.1.2-5), file, libc6-dev | libc-dev, lsb-release, python3-distutils (<< 3.12) | libpython3-stdlib (>> 3.2), debconf (>= 0.5) | debconf-2.0, perl:any
+Recommends: zfs-zed, zfsutils-linux (>= 2.2.6-1~bpo12+1), linux-libc-dev (<< 6.12~), linux-libc-dev (>= 3.10~)
+Suggests: debhelper
+Breaks: spl-dkms (<< 0.8.0~rc1)
+Description: OpenZFS filesystem kernel modules for Linux
+Homepage: https://zfsonlinux.org/
+Description-md5: 39e75ed3c1d3a5bc9c23ff32d0b5bbe1
+Section: contrib/kernel
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/zfs-dkms_2.2.6-1~bpo12+1_all.deb
+Size: 2416156
+SHA256: 5e1ea445e5550280a0a5328dba7bff0d198db9e79870a7748106372d7d47cd49
+
+Package: zfs-dracut
+Source: zfs-linux
+Version: 2.2.6-1~bpo12+1
+Installed-Size: 111
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: all
+Depends: dracut, zfs-modules | zfs-dkms, zfsutils-linux (>= 2.2.6-1~bpo12+1)
+Description: OpenZFS root filesystem capabilities for Linux - dracut
+Homepage: https://zfsonlinux.org/
+Description-md5: 965d2232071aa7eaad3e0a3ca11764b0
+Section: contrib/kernel
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/zfs-dracut_2.2.6-1~bpo12+1_all.deb
+Size: 36256
+SHA256: 98e50054a7403b899502e066e7631d2b5f852998124a460d107ccd69aa3c15db
+
+Package: zfs-initramfs
+Source: zfs-linux
+Version: 2.2.6-1~bpo12+1
+Installed-Size: 118
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: all
+Replaces: zfsutils-linux (<= 0.7.11-2)
+Depends: busybox-initramfs | busybox-static | busybox, initramfs-tools, zfs-modules | zfs-dkms, zfsutils-linux (>= 2.2.6-1~bpo12+1)
+Breaks: zfsutils-linux (<= 0.7.11-2)
+Description: OpenZFS root filesystem capabilities for Linux - initramfs
+Homepage: https://zfsonlinux.org/
+Description-md5: ed136876804c562cd1f81b87863a33a9
+Section: contrib/kernel
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/zfs-initramfs_2.2.6-1~bpo12+1_all.deb
+Size: 36528
+SHA256: 6fdbc5ba3e45259449f64e347446e00663b149545d6c55e8c17e50d275dfc94a
+
+Package: zfs-test
+Source: zfs-linux
+Version: 2.2.6-1~bpo12+1
+Installed-Size: 34769
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: amd64
+Replaces: zfsutils-linux (<= 0.7.9-2)
+Depends: acl, attr, bc, fio, ksh, lsscsi, mdadm, parted, python3, python3-pyzfs, sudo, sysstat, zfs-modules | zfs-dkms, zfsutils-linux (>= 2.2.6-1~bpo12+1), libaio1 (>= 0.3.93), libc6 (>= 2.34), libnvpair3linux (>= 0.8.2), libudev1 (>= 183), libzfs4linux (>= 2.2), libzpool5linux (>= 2.2.0), zlib1g (>= 1:1.2.3.3)
+Recommends: curl, nfs-kernel-server, rsync, tzdata-legacy
+Conflicts: zutils
+Breaks: zfsutils-linux (<= 0.7.9-2)
+Description: OpenZFS test infrastructure and support scripts
+Homepage: https://zfsonlinux.org/
+Description-md5: 626efba8698ac960b7fa793abb13e6d2
+Section: contrib/admin
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/zfs-test_2.2.6-1~bpo12+1_amd64.deb
+Size: 28533628
+SHA256: 13689452f2881f0448ee0b03d50edcdac5a833ec111ca39bebb022a786a031cc
+
+Package: zfs-zed
+Source: zfs-linux
+Version: 2.2.6-1~bpo12+1
+Installed-Size: 272
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: amd64
+Depends: zfs-modules | zfs-dkms, zfsutils-linux (>= 2.2.6-1~bpo12+1), libc6 (>= 2.34), libnvpair3linux (>= 0.8.2), libudev1 (>= 183), libuuid1 (>= 2.16), libuutil3linux (>= 0.8.2), libzfs4linux (>= 2.2.3)
+Pre-Depends: init-system-helpers (>= 1.54~)
+Description: OpenZFS Event Daemon
+Homepage: https://zfsonlinux.org/
+Description-md5: 371f25433afc0f13d827a77c432615a1
+Section: contrib/admin
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/zfs-zed_2.2.6-1~bpo12+1_amd64.deb
+Size: 79772
+SHA256: d8f46d0bc5b7d36de6b7ebd111f9f1d62bd2ce49bb7b8104d3f89a8f54ee7016
+
+Package: zfsutils-linux
+Source: zfs-linux
+Version: 2.2.6-1~bpo12+1
+Installed-Size: 1773
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: amd64
+Replaces: spl (<< 0.7.9-2), spl-dkms
+Provides: zfsutils
+Depends: libnvpair3linux (= 2.2.6-1~bpo12+1), libuutil3linux (= 2.2.6-1~bpo12+1), libzfs4linux (= 2.2.6-1~bpo12+1), libzpool5linux (= 2.2.6-1~bpo12+1), python3, libblkid1 (>= 2.16), libc6 (>= 2.34), libssl3 (>= 3.0.0), libudev1 (>= 183), libuuid1 (>= 2.16)
+Pre-Depends: init-system-helpers (>= 1.54~)
+Recommends: zfs-modules | zfs-dkms, zfs-zed
+Suggests: nfs-kernel-server, samba-common-bin (>= 3.0.23), zfs-initramfs | zfs-dracut
+Conflicts: zfs, zfs-fuse
+Breaks: spl (<< 0.7.9-2), spl-dkms (<< 0.8.0~rc1), zfs-dkms (>> 2.2.6-1~bpo12+1...), zfs-dkms (<< 2.2.6-1~bpo12+1)
+Description: command-line tools to manage OpenZFS filesystems
+Homepage: https://zfsonlinux.org/
+Description-md5: e0d1624ff402201471b9a32e9cb71f16
+Section: contrib/admin
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/zfsutils-linux_2.2.6-1~bpo12+1_amd64.deb
+Size: 562272
+SHA256: 1fd8cc26be4e4c0d61e430a0f3dce3ff6752109845d8a276abcef4d7ea519e32
+

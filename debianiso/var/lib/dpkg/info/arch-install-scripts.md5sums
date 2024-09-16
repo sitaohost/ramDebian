@@ -1,0 +1,13 @@
+5702da32d5c1a8d77b8f40450eea6ffd  usr/bin/arch-chroot
+88a468d6e9b9d5f9230f93a07949a2ac  usr/bin/genfstab
+d2c12d4b35d6bc16b964b3a90cac6c70  usr/bin/pacstrap
+b46917453be98e8fd531afdd7e5eccf6  usr/share/bash-completion/completions/arch-chroot
+df6e1b5da8b9a325025ca09b1e0ac18c  usr/share/bash-completion/completions/genfstab
+dfb7344cb48da53ba7c52467338d2a86  usr/share/bash-completion/completions/pacstrap
+b8094490ab6eb62451ac3d552bc2e42d  usr/share/doc/arch-install-scripts/README.md
+eb23794405767098e98b596b61e1afdc  usr/share/doc/arch-install-scripts/changelog.Debian.gz
+dd862429ec8e1accca08106e86c58246  usr/share/doc/arch-install-scripts/copyright
+38df49cfd1afbe4fc881e71005d8f957  usr/share/man/man8/arch-chroot.8.gz
+ec0f51e6e6b9d6c1ab9dc3de10e86584  usr/share/man/man8/genfstab.8.gz
+5ddfe54fe779febe44702a5ca93a2ac7  usr/share/man/man8/pacstrap.8.gz
+f0c7d9b865614fff820a7d18e210a31a  usr/share/zsh/site-functions/_archinstallscripts

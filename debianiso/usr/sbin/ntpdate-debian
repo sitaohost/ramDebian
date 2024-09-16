@@ -1,0 +1,27 @@
+#!/bin/sh
+
+set -e
+
+# shellcheck disable=SC2154
+if [ -n "$METHOD" ] && [ "$service" != "ntpsec" ]; then
+	# Do nothing if called from /etc/network/if-up.d/ntpdate, which is the
+	# hook from the ntpdate package (as opposed to ntpsec-ntpdate).
+	exit 0
+fi
+
+if [ -r /etc/default/ntpsec-ntpdate ]; then
+	. /etc/default/ntpsec-ntpdate
+fi
+
+if [ "$NTPDATE_USE_NTP_CONF" = yes ]; then
+	if [ -r /etc/ntpsec/ntp.conf ]; then
+		NTPSERVERS=$(sed -rne 's/^(servers?|peer|pool)[[:space:]]+(-[46][[:space:]]+)?([-_.:[:alnum:]]+).*$/\3/p' /etc/ntpsec/ntp.conf | grep -v '^127\.127\.') || [ $? -le 1 ]
+	fi
+fi
+
+if [ "$IGNORE_DHCP" != "yes" ] && [ -r /run/ntpsec/ntpdate.dhcp ]; then
+	. /run/ntpsec/ntpdate.dhcp
+fi
+
+# shellcheck disable=SC2086
+exec /usr/sbin/ntpdate $NTPOPTIONS "$@" $NTPSERVERS

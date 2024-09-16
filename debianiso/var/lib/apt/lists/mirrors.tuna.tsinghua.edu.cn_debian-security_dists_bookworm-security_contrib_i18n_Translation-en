@@ -1,0 +1,17 @@
+Package: slurm-wlm-nvml-plugin
+Description-md5: 382ad5eb1a96045c9ecbf90f2e89d21b
+Description-en: SLURM NVML plugins
+ SLURM, the Simple Linux Utility for Resource Management,
+ is an open-source cluster resource management and job scheduling.
+ .
+ This package contains the Nvidia NVML-based SLURM plugin.
+
+Package: slurm-wlm-nvml-plugin-dev
+Description-md5: 25e2f364af04a256ac8860bffe699da0
+Description-en: SLURM NVML plugin development files
+ SLURM, the Simple Linux Utility for Resource Management,
+ is an open-source cluster resource management and job scheduling.
+ .
+ This package contains development files for the Nvidia NVML-based
+ SLURM plugins.
+

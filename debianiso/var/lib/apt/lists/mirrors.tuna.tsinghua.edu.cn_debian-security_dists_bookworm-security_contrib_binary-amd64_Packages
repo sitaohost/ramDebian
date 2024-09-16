@@ -1,0 +1,33 @@
+Package: slurm-wlm-nvml-plugin
+Source: slurm-wlm-contrib
+Version: 22.05.8-4+deb12u2
+Installed-Size: 106
+Maintainer: Gennaro Oliva <oliva.g@na.icar.cnr.it>
+Architecture: amd64
+Depends: libc6 (>= 2.7), libnvidia-ml1 (>= 450) | libnvidia-ml.so.1 (>= 450), slurm-wlm-basic-plugins (= 22.05.8-4+deb12u2)
+Description: SLURM NVML plugins
+Homepage: http://slurm.schedmd.com
+Description-md5: 382ad5eb1a96045c9ecbf90f2e89d21b
+Enhances: slurmd (= 22.05.8-4+deb12u2)
+Section: contrib/libs
+Priority: optional
+Filename: pool/updates/contrib/s/slurm-wlm-contrib/slurm-wlm-nvml-plugin_22.05.8-4+deb12u2_amd64.deb
+Size: 26656
+SHA256: 6538622e7585636e21d26c66c52e01fca1db8340ebe61af03df2e74d92406caf
+
+Package: slurm-wlm-nvml-plugin-dev
+Source: slurm-wlm-contrib
+Version: 22.05.8-4+deb12u2
+Installed-Size: 124
+Maintainer: Gennaro Oliva <oliva.g@na.icar.cnr.it>
+Architecture: amd64
+Depends: slurm-wlm-basic-plugins-dev (= 22.05.8-4+deb12u2), slurm-wlm-nvml-plugin (= 22.05.8-4+deb12u2), libnvidia-ml-dev
+Description: SLURM NVML plugin development files
+Homepage: http://slurm.schedmd.com
+Description-md5: 25e2f364af04a256ac8860bffe699da0
+Section: contrib/devel
+Priority: optional
+Filename: pool/updates/contrib/s/slurm-wlm-contrib/slurm-wlm-nvml-plugin-dev_22.05.8-4+deb12u2_amd64.deb
+Size: 26572
+SHA256: 74f8366c338df860dda35b7c729132099858f5c9da620e2e93c03f2526beb77b
+
