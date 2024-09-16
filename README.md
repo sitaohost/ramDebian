@@ -8,6 +8,8 @@ ramDebian is a lightweight, memory-based operating system, customized from Debia
 - Custom Kernel: Includes a custom Linux kernel (6.6.51-sitao).
 - Minimal footprint: Designed to be lightweight and efficient.
 
+The primary feature of ramDebian is to enable VPS system reinstallation. It includes a built-in install_debian command, allowing you to quickly reinstall a clean new system. This command supports installing Debian 11, Debian 12, and Debian testing versions with ease.
+
 ## Requirements
 - Virtualization: Suitable for KVM, OpenStack, or other virtualization platforms.
 - Memory: Minimum 512MB of RAM recommended for basic use.
