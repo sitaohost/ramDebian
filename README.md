@@ -11,3 +11,6 @@ ramDebian is a lightweight, memory-based operating system, customized from Debia
 ## Requirements
 - Virtualization: Suitable for KVM, OpenStack, or other virtualization platforms.
 - Memory: Minimum 512MB of RAM recommended for basic use.
+
+## License
+ramDebian is based on Debian, which is distributed under various open-source licenses, primarily the GNU General Public License (GPL). Please ensure compliance with the original licenses when using or distributing this system.
